@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
+import HomePage from "./Pages/Home/HomePage/HomePage";
 
 function App() {
 
   return <div className="App">
-    <h1>Welcome to COOKING BIRD site!</h1>
+    <HomePage />
   </div>
 
 
