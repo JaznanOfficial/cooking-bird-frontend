@@ -1,4 +1,4 @@
-const menuData = [
+[
     {
        "name":"Cold Falooda",
        "category":"Dessert",
@@ -214,4 +214,4 @@ const menuData = [
        "rating":"",
        "price":"350"
     }
- ];
+ ]
