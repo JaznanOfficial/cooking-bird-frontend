@@ -1,195 +1,217 @@
 const menuData = [
     {
-        name: "Cold Falooda",
-        category: "Dessert",
-        area: "Bangladesh",
-        items: "rose syrup, vermicelli, sweet basil seeds, milk,ice etc",
-        img: 'https://www.cookwithkushi.com/wp-content/uploads/2019/06/IMG_3859_.jpg',
-        rating:''
+       "name":"Cold Falooda",
+       "category":"Dessert",
+       "area":"Bangladesh",
+       "items":"rose syrup, vermicelli, sweet basil seeds, milk,ice etc",
+       "img":"https://www.cookwithkushi.com/wp-content/uploads/2019/06/IMG_3859_.jpg",
+       "rating":"",
+       "price":"150"
     },
     {
-        name: "Misti Doi",
-        category: "Dessert",
-        area: "Bangladesh",
-        items: "milk, curd culture and jaggery or sugar",
-        img: 'https://www.spiceupthecurry.com/wp-content/uploads/2015/12/homemade-yogurt-recipe-7.jpg',
-        rating:''
+       "name":"Misti Doi",
+       "category":"Dessert",
+       "area":"Bangladesh",
+       "items":"milk, curd culture and jaggery or sugar",
+       "img":"https://www.spiceupthecurry.com/wp-content/uploads/2015/12/homemade-yogurt-recipe-7.jpg",
+       "rating":"",
+       "price":"150"
     },
     {
-        name: "Chocolate Ice Cream",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,others",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/7.jpg',
-        rating:''
+       "name":"Chocolate Ice Cream",
+       "category":"Dessert",
+       "area":"worldwide",
+       "items":"chocolate, ice cream,others",
+       "img":"https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/7.jpg",
+       "rating":"",
+       "price":"200"
     },
     {
-        name: "Doughnut Chocolate",
-        category: "Dessert",
-        area: "worldwide",
-        items: "butter, milk, corn syrup, and vanilla",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/3.jpg',
-        rating:''
+       "name":"Doughnut Chocolate",
+       "category":"Dessert",
+       "area":"worldwide",
+       "items":"butter, milk, corn syrup, and vanilla",
+       "img":"https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/3.jpg",
+       "rating":"",
+       "price":"250"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
-    },
-    
-    {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/4.jpg',
-        rating:''
+       "name":"Vanilla Chocolate Cake",
+       "category":"Dessert",
+       "area":"worldwide",
+       "items":"chocolate, ice cream,cake",
+       "img":"https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/recipe_legacy/7533-3-large.jpg?itok=uc99no8c",
+       "rating":"",
+       "price":"250"
     },
     {
-        name: "Hamburger",
-        category: "Fast Food",
-        area: "German",
-        items: "beef, cheese, lettuce, tomato, onion, pickles, bacon, or chilies",
-        img: 'https://elanta.app/nazar/starbelly-demo/img/menu/3.jpg',
-        rating:''
+       "name":"Dark Chocolate Cake",
+       "category":"Dessert",
+       "area":"worldwide",
+       "items":"chocolate, ice cream,cake",
+       "img":"https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/4.jpg",
+       "rating":"",
+       "price":"200"
     },
     {
-        name: "Pizza xl",
-        category: "Fast Food",
-        area: "Italian",
-        items: "bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients",
-        img: 'https://static.toiimg.com/photo/msid-87930581/87930581.jpg?211826',
-        rating:''
+       "name":"Hamburger",
+       "category":"Fast Food",
+       "area":"German",
+       "items":"beef, cheese, lettuce, tomato, onion, pickles, bacon, or chilies",
+       "img":"https://elanta.app/nazar/starbelly-demo/img/menu/3.jpg",
+       "rating":"",
+       "price":"550"
     },
     {
-        name: "Spicy Hot Dog",
-        category: "Fast Food",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://realfood.tesco.com/media/images/SpicedAubergineHotDog-LGH-v2-fde94345-16f3-459f-916e-b5fe2b6e9043-0-1400x919.jpg',
-        rating:''
+       "name":"Pizza xl",
+       "category":"Fast Food",
+       "area":"Italian",
+       "items":"bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients",
+       "img":"https://static.toiimg.com/photo/msid-87930581/87930581.jpg?211826",
+       "rating":"",
+       "price":"550"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Special Breakfast with parata",
+       "category":"Breakfast",
+       "area":"Bangladesh",
+       "items":"parata,dim,dal",
+       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBewtR8g02quHUyGFfBJdXa7sAJc_HQqHArLBxk4x-_DPXTE9xcz_T870qtESCa7FVflM&usqp=CAU",
+       "rating":"",
+       "price":"250"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Special Breakfast with vorta",
+       "category":"breakfast",
+       "area":"Bangladesh",
+       "items":"dim vorta,alu vorta,kola vorta,kochu vorta,begunvorta with rice",
+       "img":"https://i0.wp.com/moha-mushkil.com/wp-content/uploads/2018/08/IMG_20180804_142445__01.jpg?resize=537%2C302",
+       "rating":"",
+       "price":"150"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"3x Spicy Ramen",
+       "category":"Breakfast",
+       "area":"Korea",
+       "items":"ramen, special chili sause",
+       "img":"https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg",
+       "rating":"",
+       "price":"350"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Kimchi Fried Rice",
+       "category":"Breakfast",
+       "area":"Korea",
+       "items":"jasmine rice, coarsely chopped,kimchi,soy sauce,egg",
+       "img":"https://i0.wp.com/baketotheroots.de/wp-content/uploads/2022/03/SQ_220222_Kimchi-Fried-Rice.jpg?fit=1200%2C1200&ssl=1",
+       "rating":"",
+       "price":"450"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Chicken Biryani with egg",
+       "category":"lunch",
+       "area":"Bangladesh",
+       "items":"biriyani,chicken,egg",
+       "img":"https://i.pinimg.com/originals/24/ac/bb/24acbb7530fb22151d3f3f1581fb947d.png",
+       "rating":"",
+       "price":"450"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Mutton Polao",
+       "category":"Lunch",
+       "area":"Bangladesh",
+       "items":"polao, mutton 3 pcs",
+       "img":"https://www.ndtv.com/cooks/images/mutton.pulao.jpg",
+       "rating":"",
+       "price":"350"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Bibimbap",
+       "category":"lunch",
+       "area":"Korea",
+       "items":"rice, seasoned vegetables, meat, egg, and a variety of other toppings",
+       "img":"https://www.maangchi.com/wp-content/uploads/2008/01/bibimbap-bowl.jpg",
+       "rating":"",
+       "price":"300"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Bulgogi",
+       "category":"lunch",
+       "area":"Korea",
+       "items":"thin slices of sirloin or other prime cuts of beef",
+       "img":"https://assets.bonappetit.com/photos/57acd741f1c801a1038bc801/8:5/w_4839,h_3024,c_limit/basic-bulgogi.jpg",
+       "rating":"",
+       "price":"250"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Mutton Khichuri",
+       "category":"dinner",
+       "area":"Bangladesh",
+       "items":"khichuri rice, mutton",
+       "img":"http://www.allbdrecipe.com/Images/Article/Img_2020823_152455_115.jpg",
+       "rating":""
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Shobji Dal Vat",
+       "category":"dinner",
+       "area":"Bangladesh",
+       "items":"2 types of vegitable, dal and rice",
+       "img":"https://www.196flavors.com/wp-content/uploads/2013/10/Nepal-Dal-Bhat.jpg",
+       "rating":"",
+       "price":"250"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Jjigae",
+       "category":"dinner",
+       "area":"Korea",
+       "items":"meat, seafood or vegetables in a broth seasoned with gochujang , doenjang , ganjang  or saeujeot ",
+       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQysLuiYbPF6owZVV_KHQUn1Uqulqq1xO0P3qjtPkE62C1EYe6jF153YJOnnIBC-4saNIE&usqp=CAU",
+       "rating":"",
+       "price":"200"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Jajangmyeon",
+       "category":"dinner",
+       "area":"Korea",
+       "items":"wheat flour, salt, baking soda, and water",
+       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeSdTwGa44IwmaL85LExcRdQzqXs8JRKh8UP_YIdnPjl0xIeB6QKlQCnSwMj2dv7tCZEo&usqp=CAU",
+       "rating":"",
+       "price":"250"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Ruz Al Bukhari",
+       "category":"Special",
+       "area":"Arabic",
+       "items":"Rice, Meet, Tomato, Onion, Carrot, Cinnamon",
+       "img":"https://toast-local-nyc3-production.nyc3.cdn.digitaloceanspaces.com/restaurants/4fb8a4ac-d365-4864-94e9-81febf166c0e/ruz-bukhari-grille-consumer-652688-780.webp",
+       "rating":"",
+       "price":"750"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Dajaj Mashwi",
+       "category":"Special",
+       "area":"Arabic",
+       "items":"chicken, red chili powder, salt, onion, black pipper etc",
+       "img":"https://thumbor.thedailymeal.com/hOxtLQOe2VVNIX25OBpYnzBWx_8=/870x565/filters:focal(780x520:781x521)/https://www.thedailymeal.com/sites/default/files/story/2017/shutterstock_538757221.jpg",
+       "rating":"",
+       "price":"850"
     },
     {
-        name: "Dark Chocolate Cake",
-        category: "Dessert",
-        area: "worldwide",
-        items: "chocolate, ice cream,cake",
-        img: 'https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg',
-        rating:''
+       "name":"Gahwa",
+       "category":"Special",
+       "area":"Arabic",
+       "items":"Arabica roasted coffee beans mixed with cardamom",
+       "img":"https://www.biogreenasia.com/en/wp-content/uploads/2018/08/gahwa-3-600x600.jpg",
+       "rating":"",
+       "price":"550"
     },
-];
+    {
+       "name":"Maamoul",
+       "category":"Special Dessert",
+       "area":"Arabic",
+       "items":"yeast, milk powder,dry milk, special syrup, date filing, walnuts filling, poistachios filling",
+       "img":"https://www.196flavors.com/wp-content/uploads/2014/11/Maamouls-FP.jpg",
+       "rating":"",
+       "price":"350"
+    }
+ ];
