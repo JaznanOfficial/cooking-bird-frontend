@@ -97,7 +97,7 @@ const Navbar = () => {
 
         <div class="navbar-end">
           <div class="dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-ghost font-medium hover:bg-red-50 btn-circle">
+            <label tabindex="0" class="btn btn-ghost font-medium hover:bg-red-100 btn-circle">
               <div class="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
