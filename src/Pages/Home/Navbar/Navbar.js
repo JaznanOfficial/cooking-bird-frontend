@@ -4,7 +4,7 @@ const Navbar = () => {
     const menuItems = (
         <>
             <li>
-                <a href="/" className="text-base font-medium text-gray-500 hover:text-red-500">
+                <a href="/" className="text-base font-medium text-gray-500 hover:bg-red-500 hover:text-white">
                     Home
                 </a>
             </li>
