@@ -1,3 +1,13 @@
-#navStyle {
-  font-family: 'Qwitcher Grypen', cursive !important;
+.style-header {
+  font-family: 'Qwitcher Grypen', cursive;
+}
+
+@media screen and (min-width: 360px) and (max-width: 481px) {
+  .style-header {
+    font-size: 18px !important;
+    line-height: 80%;
+  }
+  .sm-logo{
+    display: none;
+  }
 }
