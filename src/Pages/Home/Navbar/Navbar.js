@@ -7,7 +7,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-500"
+                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
                 >
                     <i className="fa-solid fa-house-circle-check"></i>
                 </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-500"
+                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
                 >
                     Menu
                 </a>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-500"
+                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
                 >
                     About
                 </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-500"
+                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
                 >
                     Book Table
                 </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
 
                     <div className="sm-logo">
                         <a className="flex flex-row-reverse items-center justify-center" href="/">
-                            <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl hover:text-red-500">
+                            <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl hover:text-red-600">
                                 COOKING BIRD
                             </h1>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
 
                 <div className="lg:hidden mr-16">
                     <a className="flex flex-row-reverse items-center justify-center" href="/">
-                        <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl hover:text-red-500">
+                        <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl hover:text-red-600">
                             COOKING BIRD
                         </h1>
                         <img
@@ -142,7 +142,7 @@ const Navbar = () => {
                                 <div className="card-actions">
                                     <a
                                         href="/"
-                                        className="btn-block ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                                        className="btn-block ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
                                     >
                                         View cart
                                     </a>
@@ -168,7 +168,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="font-medium hover:bg-red-50 text-gray-500 hover:text-red-500 justify-between"
+                                    className="font-medium hover:bg-red-50 text-gray-500 hover:text-red-600 justify-between"
                                 >
                                     Profile<span className="badge">New</span>
                                 </a>
@@ -177,7 +177,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="font-medium hover:bg-red-50 text-gray-500 hover:text-red-500"
+                                    className="font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
                                 >
                                     Settings
                                 </a>
@@ -186,7 +186,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                                    className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
                                 >
                                     Logout
                                 </a>
@@ -196,7 +196,7 @@ const Navbar = () => {
 
                     <a
                         href="/"
-                        className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                        className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
                     >
                         sign in
                     </a>
