@@ -2,8 +2,8 @@ import React from "react";
 
 const Banner = () => {
   return (
-   <div className="hero min-h-screen bg-base-200">
-       <div className="hero-content flex-col lg:flex-row-reverse">
+   <div className="bg-base-200 my-5">
+       <div className="container flex flex-wrap justify-around items-center lg:flex-row-reverse py-5">
         <div>
           <img
             src="https://placeimg.com/260/400/arch"
@@ -11,9 +11,9 @@ const Banner = () => {
             alt=""
           />
         </div>
-        <div className="text-start">
+        <div className="text-center ">
           <h1 className=" text-5xl font-bold">Box Office News!</h1>
-          <p className="py-6">
+          <p className="py-6 px-3 text-start">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda{" "}
             <br />
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et{" "}
@@ -23,6 +23,7 @@ const Banner = () => {
         
         </div>
       </div> 
+      
  
     </div> 
 
