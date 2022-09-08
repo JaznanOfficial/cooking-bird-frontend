@@ -77,22 +77,22 @@ const Navbar = () => {
 
                     <div className="sm-logo">
                         <a className="flex flex-row-reverse items-center justify-center" href="/">
-                            <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl hover:text-red-600">
+                            <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl text-red-600">
                                 COOKING BIRD
                             </h1>
-
                             <img
                                 className="sm:w-20 w-10"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDJ8pS9IUwJZbkvWjpd0xhQr6qxeIOZszWOA&usqp=CAU&fbclid=IwAR0IFtYIHwftcqBkKFZ8FSzseKRNDlRbk-WCw4HY3cKzlHybAIBVXHnC5qY"
                                 alt=""
                             />
+
                         </a>
                     </div>
                 </div>
 
                 <div className="lg:hidden mr-16">
                     <a className="flex flex-row-reverse items-center justify-center" href="/">
-                        <h1 className="sm:w-52 w-10 style-header font-semibold text-4xl hover:text-red-600">
+                        <h1 className="sm:w-52 w-10 style-header font-semibold text-3xl text-red-600">
                             COOKING BIRD
                         </h1>
                         <img
