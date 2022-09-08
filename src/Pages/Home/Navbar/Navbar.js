@@ -39,7 +39,7 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-8">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-1">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -186,7 +186,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                                    className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                                 >
                                     Logout
                                 </a>
@@ -196,7 +196,7 @@ const Navbar = () => {
 
                     <a
                         href="/"
-                        className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                        className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                     >
                         sign in
                     </a>

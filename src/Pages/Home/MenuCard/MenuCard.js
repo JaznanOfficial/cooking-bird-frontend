@@ -12,6 +12,7 @@ const MenuCard = () => {
                     <h2 className="card-title">Breakfast</h2>
                 </div>
             </div>
+
             <div className="card w-96 hover:bg-red-600 hover:text-neutral-content m-1 border-solid border-2 border-red-600 hover:duration-500 duration-500">
                 <div className="card-body items-center text-center">
                     <img
@@ -21,6 +22,7 @@ const MenuCard = () => {
                     <h2 className="card-title">Lunch</h2>
                 </div>
             </div>
+            
             <div className="card w-96 hover:bg-red-600 hover:text-neutral-content m-1 border-solid border-2 border-red-600 hover:duration-500 duration-500">
                 <div className="card-body items-center text-center">
                     <img
