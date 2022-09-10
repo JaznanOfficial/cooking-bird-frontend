@@ -3,7 +3,7 @@ import React from "react";
 const ShortIcon = () => {
     return (
         <div className="flex flex-wrap container mx-auto justify-center items-center my-20">
-            <div className="flex flex-nowrap justify-center items-center">
+            <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
                         <i class="fa-regular fa-credit-card"></i>
@@ -17,12 +17,12 @@ const ShortIcon = () => {
                     <p>Support lots of payment</p>
                 </div>
             </div>
-            <div className="flex flex-nowrap justify-center items-center">
+            <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
                     <i class="fa-regular fa-comments"></i>
-                    </h1>{" "}
-                    <p>24 hours/ 7 days support</p>
+                    </h1>
+                    <p>24 hours/ 7 days <br /> support</p>
                 </div>
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
@@ -31,7 +31,7 @@ const ShortIcon = () => {
                     <p>Free delivery</p>
                 </div>
             </div>
-            <div className="flex flex-nowrap justify-center items-center">
+            <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
                     <i class="fa-solid fa-list-check"></i>
