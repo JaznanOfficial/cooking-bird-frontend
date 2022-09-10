@@ -1,13 +1,14 @@
 import { Carousel } from "flowbite-react";
 import React from "react";
 import "./Banner.css";
+import BannerCategories from "./BannerCategories";
 
 const Banner = () => {
   return (
-    <div className="bg-red-100 my-5">
+    <div className="bg-red-100 my-5 mb-10">
+      
       <div className="container relative flex flex-wrap justify-around items-center lg:flex-row-reverse py-5">
         
-        <div>
         <div className="w-80 h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel>
           <img
@@ -26,7 +27,6 @@ const Banner = () => {
             alt="..."
           />
         </Carousel>
-      </div>
         </div>
 
         <div className="text-start py-4 px-3 description-div">
@@ -43,6 +43,9 @@ const Banner = () => {
         </div>
 
       </div>
+
+      <BannerCategories/>
+
     </div>
   );
 };
