@@ -5,7 +5,7 @@ import BannerCategories from "./BannerCategories";
 
 const Banner = () => {
   return (
-    <div className="bg-red-100 my-5 mb-10">
+    <div className="bg-red-100">
       
       <div className="container relative flex flex-wrap justify-around items-center lg:flex-row-reverse py-5">
         
