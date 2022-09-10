@@ -17,7 +17,7 @@ const ShortIcon = () => {
                     <p>Support lots of payment</p>
                 </div>
             </div>
-            <div className="flex flex-nowrap justify-center items-center">
+            <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
                     <i class="fa-regular fa-comments"></i>
@@ -31,7 +31,7 @@ const ShortIcon = () => {
                     <p>Free delivery</p>
                 </div>
             </div>
-            <div className="flex flex-nowrap justify-center items-center">
+            <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
                     <i class="fa-solid fa-list-check"></i>
