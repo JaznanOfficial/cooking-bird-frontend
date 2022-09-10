@@ -44,8 +44,8 @@ const Banner = () => {
 
       </div>
 
+      
       <BannerCategories/>
-
     </div>
   );
 };
