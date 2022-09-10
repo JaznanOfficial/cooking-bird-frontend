@@ -7,25 +7,25 @@ const OurProcess = () => {
       _id: 1,
       name: "Search",
       img: "https://i.ibb.co/dr3Dj6V/download.png",
-      description:"Lorem ipsum dlor sit amet, contur adcing elit. Aliuam laborum error aliquid ipsum impedit ullam.",
+      description:"Lorem ipsum dlor sit amet, contur adcing elit. Aliam Lorem ipsum dlor si ipsum impedit ullam.",
     },
     {
       _id: 2,
       name: "Select",
       img: "https://i.ibb.co/Wn8y7sx/download-1.png",
-      description:"Lorem ipsum dlor sit amet, cotur adcing elit. Aliam laborum error aliquid ipsum impedit ullam.",
+      description:"Lorem ipsum dlor sit amet, cotur adcing elit. Aliam Lorem ipsum dlor si ipsum impedit ullam.",
     },
     {
       _id: 3,
       name: "Order",
       img: "https://i.ibb.co/Yy81p3J/download-2.png",
-      description:"Lorem ipsum dlor sit amet, cotur asing elit. Aluam laborum error aliquid ipsum impedit ullam.",
+      description:"Lorem ipsum dlor sit amet, cotur asing elit. Aluam Lorem ipsum dlor si ipsum impedit ullam.",
     },
     {
       _id: 4,
       name: "Enjoy",
       img: "https://i.ibb.co/wCnSxxQ/download-3.png",
-      description:"Lorem ipsum dlor sit amet, cotur ading elit. Aquam laborum error aliquid ipsum impedit ulla.",
+      description:"Lorem ipsum dlor sit amet, cotur ading elit. Aquam Lorem ipsum dlor si ipsum impedit ulla.",
     },
   ];
 
