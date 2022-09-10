@@ -7,7 +7,13 @@
 
 }
 
+/* On screens that are 640px or less, set the properties  */
+
 /* @media screen and (min-width: 360px) and (max-width: 481px)  {} */
+
+/* If [device width] is greater than or equal to 641px, then do */
+
+
 @media screen and (max-width: 640px) {
   .style-header {
     font-size: 18px !important;
