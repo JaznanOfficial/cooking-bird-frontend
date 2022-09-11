@@ -5,7 +5,7 @@ import BannerCategories from "./BannerCategories";
 
 const Banner = () => {
   return (
-    <div className="bg-red-100 my-5 mb-10">
+    <div className="bg-red-50 my-5 mb-10">
       
       <div className="container relative flex flex-wrap justify-around items-center lg:flex-row-reverse py-5">
         
@@ -30,7 +30,7 @@ const Banner = () => {
         </div>
 
         <div className="text-start py-4 px-3 description-div">
-          <h1 className=" text-5xl font-bold">Box Office News!</h1>
+          <h1 className=" text-5xl font-bold font-ubuntu">Box Office News!</h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda{" "}
             <br />
