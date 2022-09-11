@@ -7,7 +7,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
                     <i className="fa-solid fa-house-circle-check"></i>
                 </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
                     Menu
                 </a>
@@ -23,7 +23,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
                     About
                 </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
             <li>
                 <a
                     href="/"
-                    className="text-base font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
                     Book Table
                 </a>
@@ -167,7 +167,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="font-medium hover:bg-red-50 text-gray-500 hover:text-red-600 justify-between"
+                                    className="font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 justify-between"
                                 >
                                     Profile<span className="badge">New</span>
                                 </a>
@@ -176,7 +176,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="font-medium hover:bg-red-50 text-gray-500 hover:text-red-600"
+                                    className="font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                                 >
                                     Settings
                                 </a>

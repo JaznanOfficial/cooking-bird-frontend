@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Cooks from '../Cooks/Cooks';
 import Footer from '../Footer/Footer';
 import MenuCard from '../MenuCard/MenuCard';
 import Navbar from '../Navbar/Navbar';
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Banner />
             <OurProcess />
             <MenuCard />
+            <Cooks />
             <ShortIcon />
             <Footer/>
         </div>
