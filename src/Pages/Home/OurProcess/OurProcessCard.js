@@ -1,7 +1,7 @@
 import React from "react";
 
 const OurProcessCard = ({ processData }) => {
-  const { name, img, description, badge } = processData;
+  const { name, img, description, image, badge } = processData;
   return (
     <div className=" w-64 flex flex-col text-center items-center py-5">
       <div className="relative w-28 h-28 bg-red-600 flex flex-col justify-center items-center rounded-full">
@@ -14,6 +14,7 @@ const OurProcessCard = ({ processData }) => {
         <h2 className="card-title">{name}</h2>
         <p>{description}</p>
       </div>
+      <div>{image}</div>
     </div>
   );
 };
