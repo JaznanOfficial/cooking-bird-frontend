@@ -82,10 +82,9 @@ const Navbar = () => {
                             </h1>
                             <img
                                 className="sm:w-20 w-10"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDJ8pS9IUwJZbkvWjpd0xhQr6qxeIOZszWOA&usqp=CAU&fbclid=IwAR0IFtYIHwftcqBkKFZ8FSzseKRNDlRbk-WCw4HY3cKzlHybAIBVXHnC5qY"
+                                src="https://i.ibb.co/9Yg0Pvx/cooking-bird.png"
                                 alt=""
                             />
-
                         </a>
                     </div>
                 </div>
@@ -97,7 +96,7 @@ const Navbar = () => {
                         </h1>
                         <img
                             className="sm:w-20 w-10"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDJ8pS9IUwJZbkvWjpd0xhQr6qxeIOZszWOA&usqp=CAU&fbclid=IwAR0IFtYIHwftcqBkKFZ8FSzseKRNDlRbk-WCw4HY3cKzlHybAIBVXHnC5qY"
+                            src="https://i.ibb.co/9Yg0Pvx/cooking-bird.png"
                             alt=""
                         />
                     </a>
