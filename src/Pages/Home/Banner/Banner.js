@@ -11,26 +11,26 @@ const Banner = () => {
         
         <div className="w-80 h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel>
+        <img
+        className="w-80 h-80"
+        src="https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg"
+        alt="..."
+        />
+        <img
+          className="w-80 h-80"
+          src="https://static.toiimg.com/photo/msid-87930581/87930581.jpg?211826"
+          alt="..."
+        />
           <img
             className="w-80 h-80"
-            src="https://static.toiimg.com/photo/msid-87930581/87930581.jpg?211826"
-            alt="..."
-          />
-          <img
-            className="w-80 h-80"
-            src="https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg"
-            alt="..."
-          />
-          <img
-            className="w-80 h-80"
-            src="http://www.allbdrecipe.com/Images/Article/Img_2020823_152455_115.jpg"
+            src="https://i.ibb.co/PGWwNGw/images.jpg"
             alt="..."
           />
         </Carousel>
         </div>
 
         <div className="text-start py-4 px-3 description-div">
-          <h1 className=" text-5xl font-bold font-ubuntu">Box Office News!</h1>
+          <h1 className=" text-5xl font-bold font-ubuntu text-navy-900 ">Box Office News!</h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda{" "}
             <br />

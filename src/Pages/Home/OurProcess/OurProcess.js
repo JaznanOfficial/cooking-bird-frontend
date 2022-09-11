@@ -36,8 +36,8 @@ const OurProcess = () => {
   return (
     <div className="bg-gray-50 mb-10 py-20">
       <div className="py-10">
-        <h1 className="text-red-600 text-1xl font-medium">OUR PROCESS</h1>
-        <h1 className="text-black text-3xl font-medium">How Does It Work</h1>
+        <h1 className="text-red-600 text-2xl  font-ubuntu">OUR PROCESS</h1>
+        <h1 className="text-5xl font-bold font-ubuntu text-navy-900">How Does It Work</h1>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-3">
         {allProcessData?.map((processData) => (
