@@ -12,6 +12,11 @@ const Banner = () => {
         <div className="w-80 h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel>
         <img
+          className="w-80 h-80"
+          src="https://i.ibb.co/PGWwNGw/images.jpg"
+          alt="..."
+        />
+        <img
         className="w-80 h-80"
         src="https://templates.hibootstrap.com/restant/default/assets/img/home-one/collection/1.jpg"
         alt="..."
@@ -21,11 +26,6 @@ const Banner = () => {
           src="https://static.toiimg.com/photo/msid-87930581/87930581.jpg?211826"
           alt="..."
         />
-          <img
-            className="w-80 h-80"
-            src="https://i.ibb.co/PGWwNGw/images.jpg"
-            alt="..."
-          />
         </Carousel>
         </div>
 
