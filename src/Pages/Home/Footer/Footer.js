@@ -22,6 +22,7 @@ const Footer = () => {
                             appstore
                         </p>
                     </div>
+                    
                     <div className="flex flex-nowrap justify-center items-center mt-3">
                         <a
                             href="https://github.com/jaznanofficial"
@@ -56,6 +57,7 @@ const Footer = () => {
                             <i class="fa-brands fa-twitter text-2xl m-0 p-0"></i>
                         </a>
                     </div>
+
                 </div>
                 <div className="lg:w-3/12 lg:mx-auto my-10 lg:order-3">
                     <img
