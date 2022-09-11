@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Footer from '../Footer/Footer';
 import MenuCard from '../MenuCard/MenuCard';
 import Navbar from '../Navbar/Navbar';
 import ShortIcon from '../ShortIcon/ShortIcon';
@@ -10,7 +11,8 @@ const HomePage = () => {
             <Navbar />
             <Banner />
             <MenuCard />
-            <ShortIcon/>
+            <ShortIcon />
+            <Footer/>
         </div>
     );
 };
