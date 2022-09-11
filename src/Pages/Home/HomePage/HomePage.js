@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import MenuCard from '../MenuCard/MenuCard';
 import Navbar from '../Navbar/Navbar';
+import OurProcess from '../OurProcess/OurProcess';
 import ShortIcon from '../ShortIcon/ShortIcon';
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
         <div>
             <Navbar />
             <Banner />
+            <OurProcess />
             <MenuCard />
             <ShortIcon />
             <Footer/>
