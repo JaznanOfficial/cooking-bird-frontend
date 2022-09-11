@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Footer from '../Footer/Footer';
 import MenuCard from '../MenuCard/MenuCard';
 import Navbar from '../Navbar/Navbar';
 import OurProcess from '../OurProcess/OurProcess';
@@ -13,6 +14,7 @@ const HomePage = () => {
             <OurProcess />
             <MenuCard />
             <ShortIcon />
+            <Footer/>
         </div>
     );
 };

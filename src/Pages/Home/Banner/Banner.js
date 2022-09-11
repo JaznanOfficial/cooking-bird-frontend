@@ -30,7 +30,7 @@ const Banner = () => {
         </div>
 
         <div className="text-start py-4 px-3 description-div">
-          <h1 className=" text-5xl font-bold">Box Office News!</h1>
+          <h1 className=" text-5xl font-bold font-ubuntu">Box Office News!</h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda{" "}
             <br />
@@ -44,8 +44,8 @@ const Banner = () => {
 
       </div>
 
+      
       <BannerCategories/>
-
     </div>
   );
 };
