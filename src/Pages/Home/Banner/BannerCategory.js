@@ -3,7 +3,7 @@ import React from "react";
 const BannerCategory = ({category}) => {
   return (
     <div
-      className="flex flex-col justify-center items-center"
+      className="flex flex-col text-center items-center pt-1"
     >
       <div>
         <img
