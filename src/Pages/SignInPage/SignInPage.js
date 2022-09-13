@@ -1,99 +1,134 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const SignInPage = () => {
-    const background =
-        "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80";
+    const signInBg =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
+    const signUpBg = 'https://www.ellenfinkelstein.com/pptblog/wp-content/uploads/2014/02/blue-gradient-background.png'
     return (
-        <div>
-            <div
-                class="bg-no-repeat bg-cover bg-center relative"
-                style={{ backgroundImage: `url(${background})` }}
-            >
-                <div class="absolute bg-gradient-to-b from-red-500 to-red-400 opacity-75 inset-0 z-0"></div>
-                <div class="min-h-screen sm:flex sm:flex-row mx-0 justify-center">
-                    <div class="flex-col flex  self-center p-10 sm:max-w-5xl xl:max-w-2xl  z-10">
-                        <div class="self-start hidden lg:flex flex-col  text-white">
-                            <img src="" class="mb-3" />
-                            <h1 class="mb-3 font-bold text-5xl">Hi ? Welcome Back Aji </h1>
-                            <p class="pr-3">
-                                Lorem ipsum is placeholder text commonly used in the graphic, print,
-                                and publishing industries for previewing layouts and visual mockups
-                            </p>
+        <div class="h-screen md:flex">
+            <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
+                <div>
+                    <p class="text-white mt-1">Welcome back to</p>
+                    <h1 class="text-white font-bold text-4xl font-sans">Cooking Bird!</h1>
+                    {/* <button
+                        type="submit"
+                        class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2"
+                    >
+                        Read More
+                    </button> */}
+                    <button
+                            type="submit"
+                            class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl"
+                            // style={{ background: `url(${signUpBg})` }}
+                        >
+                            New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                </div>
+                <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+                <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+                <div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+                <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+            </div>
+            <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
+                <div>
+                    <form class="bg-white">
+                        <h1 class=" font-bold text-2xl text-red-600 mb-10">Sign in, Please!</h1>
+                        {/* <p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p> */}
+                        <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 text-gray-400"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <input
+                                class="pl-2 outline-none border-none"
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Full name"
+                            />
                         </div>
-                    </div>
-                    <div class="flex justify-center self-center  z-10">
-                        <div class="p-12 bg-white mx-auto rounded-2xl w-100 ">
-                            <div class="mb-4">
-                                <h3 class="font-semibold text-2xl text-gray-800">Sign In </h3>
-                                <p class="text-gray-500">Please sign in to your account.</p>
-                            </div>
-                            <div class="space-y-5">
-                                <div class="space-y-2">
-                                    <label class="text-sm font-medium text-gray-700 tracking-wide">
-                                        Email
-                                    </label>
-                                    <input
-                                        class=" w-full text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400"
-                                        type=""
-                                        placeholder="mail@gmail.com"
-                                    />
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="mb-5 text-sm font-medium text-gray-700 tracking-wide">
-                                        Password
-                                    </label>
-                                    <input
-                                        class="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400"
-                                        type=""
-                                        placeholder="Enter your password"
-                                    />
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <input
-                                            id="remember_me"
-                                            name="remember_me"
-                                            type="checkbox"
-                                            class="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded"
-                                        />
-                                        <label
-                                            for="remember_me"
-                                            class="ml-2 block text-sm text-gray-800"
-                                        >
-                                            Remember me
-                                        </label>
-                                    </div>
-                                    <div class="text-sm">
-                                        <a href="#" class="text-green-400 hover:text-green-500">
-                                            Forgot your password?
-                                        </a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <button
-                                        type="submit"
-                                        class="w-full flex justify-center bg-green-400  hover:bg-green-500 text-gray-100 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500"
-                                    >
-                                        Sign in
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="pt-5 text-center text-gray-400 text-xs">
-                                <span>
-                                    Copyright © 2021-2022
-                                    <a
-                                        href="https://codepen.io/uidesignhub"
-                                        rel=""
-                                        target="_blank"
-                                        title="Ajimon"
-                                        class="text-green hover:text-green-500 "
-                                    >
-                                        AJI
-                                    </a>
-                                </span>
-                            </div>
+
+                        <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 text-gray-400"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                                />
+                            </svg>
+                            <input
+                                class="pl-2 outline-none border-none"
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Email Address"
+                            />
                         </div>
-                    </div>
+                        <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 text-gray-400"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <input
+                                class="pl-2 outline-none border-none"
+                                type="password"
+                                name=""
+                                id=""
+                                placeholder="Password"
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 "
+                            style={{ background: `url(${signInBg})` }}
+                        >
+                            Sign In
+                        </button>
+                    </form>
+                    <span class="text-sm ml-2 hover:text-rose-500 cursor-pointer">
+                        Forgot Password ?
+                    </span>
+                    {<hr className="mt-2 border border-rose-500" />}
+
+                    <button
+                        type="submit"
+                        class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-tr hover:from-red-500 hover:to-red-700"
+                    >
+                        <i class="fa-brands fa-google-plus"></i> Sign in with Google
+                    </button>
+                    <button
+                        type="submit"
+                        class="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+                    >
+                        <i class="fa-brands fa-github"></i> Sign in with Github
+                    </button>
+
+                    {/* <h6>Or</h6>
+                    New User? go to <Link to='sign-up'> Sign Up</Link> */}
                 </div>
             </div>
         </div>
