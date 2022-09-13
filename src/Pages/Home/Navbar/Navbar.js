@@ -8,7 +8,7 @@ const Navbar = () => {
             <li>
                 <Link
                     to="/"
-                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 focus:bg-red-50 focus:text-red-600 text-navy-900 hover:text-red-600 " 
                 >
                     <i className="fa-solid fa-house-circle-check"></i>
                 </Link>
@@ -16,7 +16,7 @@ const Navbar = () => {
             <li>
                 <Link
                     to="/menu"
-                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600  focus:bg-red-50 focus:text-red-600"
                 >
                     Menu
                 </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <li>
                 <Link
                     to="/about-&-contact"
-                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
                 >
                     About & Contact
                 </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             <li>
                 <Link
                     to="/book-a-table"
-                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
                 >
                     Book a Table
                 </Link>
