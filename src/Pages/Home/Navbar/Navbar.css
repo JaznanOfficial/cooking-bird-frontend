@@ -13,6 +13,9 @@
 
 /* If [device width] is greater than or equal to 641px, then do */
 
+a{
+  
+}
 
 @media screen and (max-width: 640px) {
   .style-header {
