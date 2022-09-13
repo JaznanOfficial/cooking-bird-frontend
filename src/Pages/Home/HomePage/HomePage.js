@@ -1,4 +1,5 @@
 import React from 'react';
+import SignInPage from '../../SignInPage/SignInPage';
 import Banner from '../Banner/Banner';
 import Cooks from '../Cooks/Cooks';
 import Footer from '../Footer/Footer';
@@ -16,6 +17,7 @@ const HomePage = () => {
             <MenuCard />
             <Cooks />
             <ShortIcon />
+            <SignInPage/>
             <Footer/>
         </div>
     );
