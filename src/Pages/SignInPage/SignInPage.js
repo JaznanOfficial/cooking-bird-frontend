@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const SignInPage = () => {
-    const background = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU'
+    const signInBg =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
+    const signUpBg = 'https://www.ellenfinkelstein.com/pptblog/wp-content/uploads/2014/02/blue-gradient-background.png'
     return (
         <div class="h-screen md:flex">
             <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
@@ -14,6 +17,13 @@ const SignInPage = () => {
                     >
                         Read More
                     </button> */}
+                    <button
+                            type="submit"
+                            class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl"
+                            // style={{ background: `url(${signUpBg})` }}
+                        >
+                            New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
                 </div>
                 <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
                 <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
@@ -94,28 +104,31 @@ const SignInPage = () => {
                         <button
                             type="submit"
                             class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 "
-                            style={{background:`url(${background})`}}
+                            style={{ background: `url(${signInBg})` }}
                         >
                             Sign In
                         </button>
                     </form>
-                    <span class="text-sm ml-2 hover:text-rose-500 cursor-pointer mb-2">
+                    <span class="text-sm ml-2 hover:text-rose-500 cursor-pointer">
                         Forgot Password ?
                     </span>
-                    {<hr className="mt-5 border border-rose-500" />}
-                    <h6>Or</h6>
+                    {<hr className="mt-2 border border-rose-500" />}
+
                     <button
-                            type="submit"
-                            class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-tr hover:from-red-500 hover:to-red-700"
-                        >
+                        type="submit"
+                        class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-tr hover:from-red-500 hover:to-red-700"
+                    >
                         <i class="fa-brands fa-google-plus"></i> Sign in with Google
                     </button>
                     <button
-                            type="submit"
-                            class="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
-                        >
+                        type="submit"
+                        class="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+                    >
                         <i class="fa-brands fa-github"></i> Sign in with Github
-                        </button>
+                    </button>
+
+                    {/* <h6>Or</h6>
+                    New User? go to <Link to='sign-up'> Sign Up</Link> */}
                 </div>
             </div>
         </div>
