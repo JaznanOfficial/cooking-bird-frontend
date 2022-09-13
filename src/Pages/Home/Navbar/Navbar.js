@@ -1,40 +1,41 @@
 import React from "react";
 import "./Navbar.css";
+import {  Link } from "react-router-dom";
 
 const Navbar = () => {
     const menuItems = (
         <>
             <li>
-                <a
-                    href="/"
+                <Link
+                    to="/"
                     className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
                     <i className="fa-solid fa-house-circle-check"></i>
-                </a>
+                </Link>
             </li>
             <li>
-                <a
-                    href="/"
+                <Link
+                    to="/menu"
                     className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
                     Menu
-                </a>
+                </Link>
             </li>
             <li>
-                <a
-                    href="/"
+                <Link
+                    to="/about-&-contact"
                     className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
-                    About
-                </a>
+                    About & Contact
+                </Link>
             </li>
             <li>
-                <a
-                    href="/"
+                <Link
+                    to="/book-a-table"
                     className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
                 >
-                    Book Table
-                </a>
+                    Book a Table
+                </Link>
             </li>
         </>
     );
@@ -193,12 +194,11 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <a
-                        href="/"
+                    <Link to="/sign-in"
                         className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                     >
                         sign in
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
