@@ -31,7 +31,7 @@ const SignInPage = () => {
             </div>
             <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
                 <div className="shadow-2xl p-5">
-                    <div class="relative overflow-hidden md:flex w-full bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center lg:hidden p-5">
+                    <div class="relative overflow-hidden md:flex w-full bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center lg:hidden p-5 mb-5">
                         <div>
                             <p class="text-white mt-1">Welcome back to</p>
                             <h1 class="text-white font-bold text-4xl font-sans">Sign In!</h1>
