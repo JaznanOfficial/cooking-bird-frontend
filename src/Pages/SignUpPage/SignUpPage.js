@@ -5,18 +5,16 @@ import { Link } from "react-router-dom";
 const SignUpPage = () => {
     const background =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
-    
-    const avatar = 'https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8='
 
-
-
+    const avatar =
+        "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
 
     return (
         <div class="h-screen md:flex">
             <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
                 <div>
-                    <p class="text-white mt-1">Welcome back to</p>
-                    <h1 class="text-white font-bold text-4xl font-sans">Cooking Bird!</h1>
+                    <p class="text-white mt-1">Welcome to</p>
+                    <h1 class="text-white font-bold text-4xl font-sans">Sign Up!</h1>
 
                     <Link
                         to="/sign-in"
@@ -34,12 +32,26 @@ const SignUpPage = () => {
             </div>
             <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
                 <div className="shadow-2xl p-5">
+                    <div class="relative overflow-hidden md:flex w-full bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center lg:hidden p-5">
+                        <div>
+                            <p class="text-white mt-1">Welcome to</p>
+                            <h1 class="text-white font-bold text-4xl font-sans">Sign up!</h1>
+
+                            <Link
+                                to="/sign-in"
+                                class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
+                                
+                            >
+                                Already Signed up? Go to Sign in{" "}
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </Link>
+                        </div>
+
+                    </div>
                     <form class="bg-white">
-                        <h1 class=" font-bold text-2xl text-red-600 mb-10">Sign up</h1>
-                        {/* <p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p> */}
 
                         <div class="flex  justify-center items-center">
-                            <div class="flex items-center shadow-md bg-white p-3 rounded-md">
+                            <div class="flex items-center shadow-md bg-white rounded-md">
                                 <div class="shrink-0 mr-3">
                                     <img
                                         class="h-16 w-16 object-cover rounded-full"
@@ -56,7 +68,7 @@ const SignUpPage = () => {
                             </div>
                         </div>
                         <div class="text-red-600 my-5">Choose profile photo</div>
-                            
+
                         <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -131,23 +143,23 @@ const SignUpPage = () => {
                             Sign In
                         </button>
                     </form>
-                    {/* <span class="text-sm ml-2 hover:text-rose-500 cursor-pointer mb-2">
+                    {/* <span class="text-sm ml-2 hover:text-rose-500 cursor-pointer">
                         Forgot Password ?
                     </span>
-                    {<hr className="mt-5 border border-rose-500" />}
-                    <h6>Or</h6>
+                    <hr className="mt-2 border border-rose-500" />
+
                     <button
-                            type="submit"
-                            class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-tr hover:from-red-500 hover:to-red-700"
-                        >
+                        type="submit"
+                        class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-tr hover:from-red-500 hover:to-red-700"
+                    >
                         <i class="fa-brands fa-google-plus"></i> Sign in with Google
                     </button>
                     <button
-                            type="submit"
-                            class="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
-                        >
+                        type="submit"
+                        class="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+                    >
                         <i class="fa-brands fa-github"></i> Sign in with Github
-                        </button> */}
+                    </button> */}
                 </div>
             </div>
         </div>

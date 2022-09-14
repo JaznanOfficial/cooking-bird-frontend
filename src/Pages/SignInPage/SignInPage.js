@@ -2,23 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SignInPage = () => {
-    const signInBg =
+    const background =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
-    const signUpBg =
-        "https://www.ellenfinkelstein.com/pptblog/wp-content/uploads/2014/02/blue-gradient-background.png";
+
+    const avatar =
+        "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
+
     return (
         <div class="h-screen md:flex">
             <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
                 <div>
                     <p class="text-white mt-1">Welcome back to</p>
-                    <h1 class="text-white font-bold text-4xl font-sans">Cooking Bird!</h1>
-                    
+                    <h1 class="text-white font-bold text-4xl font-sans">Sign In!</h1>
+
                     <Link
                         to="/sign-up"
-                        class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl"
+                        class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
                         // style={{ background: `url(${signUpBg})` }}
                     >
-                        New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        New User? Go to Sign Up{" "}
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </Link>
                 </div>
                 <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
@@ -28,31 +31,21 @@ const SignInPage = () => {
             </div>
             <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
                 <div className="shadow-2xl p-5">
-                    <form class="bg-white">
-                        <h1 class=" font-bold text-2xl text-red-600 mb-10">Sign in, Please!</h1>
-                        {/* <p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p> */}
-                        <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 text-gray-400"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <input
-                                class="pl-2 outline-none border-none"
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="Full name"
-                            />
-                        </div>
+                    <div class="relative overflow-hidden md:flex w-full bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center lg:hidden p-5">
+                        <div>
+                            <p class="text-white mt-1">Welcome back to</p>
+                            <h1 class="text-white font-bold text-4xl font-sans">Sign In!</h1>
 
+                            <Link
+                                to="/sign-up"
+                                class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
+                            >
+                                New User? Go to Sign Up{" "}
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </Link>
+                        </div>
+                    </div>
+                    <form class="bg-white">
                         <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +93,7 @@ const SignInPage = () => {
                         <button
                             type="submit"
                             class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 "
-                            style={{ background: `url(${signInBg})` }}
+                            style={{ background: `url(${background})` }}
                         >
                             Sign In
                         </button>
@@ -108,7 +101,7 @@ const SignInPage = () => {
                     <span class="text-sm ml-2 hover:text-rose-500 cursor-pointer">
                         Forgot Password ?
                     </span>
-                    {<hr className="mt-2 border border-rose-500" />}
+                    <hr className="mt-2 border border-rose-500" />
 
                     <button
                         type="submit"
@@ -122,9 +115,6 @@ const SignInPage = () => {
                     >
                         <i class="fa-brands fa-github"></i> Sign in with Github
                     </button>
-
-                    {/* <h6>Or</h6>
-                    New User? go to <Link to='sign-up'> Sign Up</Link> */}
                 </div>
             </div>
         </div>
