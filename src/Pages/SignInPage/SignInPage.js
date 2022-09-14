@@ -1,3 +1,4 @@
+import { Avatar } from "flowbite-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -20,8 +21,7 @@ const SignInPage = () => {
                         class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
                         // style={{ background: `url(${signUpBg})` }}
                     >
-                        New User? Go to Sign Up{" "}
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </Link>
                 </div>
                 <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
@@ -44,6 +44,14 @@ const SignInPage = () => {
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                             </Link>
                         </div>
+                    </div>
+                    <div className="flex justify-center flex-wrap gap-2 my-2">
+                        <Avatar
+                            img={avatar}
+                            rounded={true}
+                            size='lg'
+                        />
+                        
                     </div>
                     <form class="bg-white">
                         <div class="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
