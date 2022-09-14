@@ -1,29 +1,25 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const SignInPage = () => {
     const signInBg =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
-    const signUpBg = 'https://www.ellenfinkelstein.com/pptblog/wp-content/uploads/2014/02/blue-gradient-background.png'
+    const signUpBg =
+        "https://www.ellenfinkelstein.com/pptblog/wp-content/uploads/2014/02/blue-gradient-background.png";
     return (
         <div class="h-screen md:flex">
             <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
                 <div>
                     <p class="text-white mt-1">Welcome back to</p>
                     <h1 class="text-white font-bold text-4xl font-sans">Cooking Bird!</h1>
-                    {/* <button
-                        type="submit"
-                        class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2"
+                    
+                    <Link
+                        to="/sign-up"
+                        class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl"
+                        // style={{ background: `url(${signUpBg})` }}
                     >
-                        Read More
-                    </button> */}
-                    <button
-                            type="submit"
-                            class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl"
-                            // style={{ background: `url(${signUpBg})` }}
-                        >
-                            New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        </button>
+                        New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </Link>
                 </div>
                 <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
                 <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
@@ -31,7 +27,7 @@ const SignInPage = () => {
                 <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
             </div>
             <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
-                <div>
+                <div className="shadow-2xl p-5">
                     <form class="bg-white">
                         <h1 class=" font-bold text-2xl text-red-600 mb-10">Sign in, Please!</h1>
                         {/* <p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p> */}
