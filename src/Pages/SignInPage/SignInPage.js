@@ -18,7 +18,7 @@ const SignInPage = () => {
 
                     <Link
                         to="/sign-up"
-                        class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
+                        className="block w-full  mt-4 py-2 rounded-2xl text-red-600 font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
                         // style={{ background: `url(${signUpBg})` }}
                     >
                         New User? Go to Sign Up <i class="fa-solid fa-arrow-right-from-bracket"></i>
@@ -38,7 +38,7 @@ const SignInPage = () => {
 
                             <Link
                                 to="/sign-up"
-                                class="block w-full  mt-4 py-2 rounded-2xl text-white font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
+                                class="block w-full  mt-4 py-2 rounded-2xl text-red-600 font-semibold mb-2 text-red-600 bg-gradient-to-tr from-gray-100 to-gray-300  hover:from-gray-300 hover:to-gray-100 hover:shadow-2xl px-3"
                             >
                                 New User? Go to Sign Up{" "}
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
