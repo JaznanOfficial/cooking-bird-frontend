@@ -113,7 +113,7 @@ const SignInPage = () => {
 
                     <button
                         type="submit"
-                        class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-tr hover:from-red-500 hover:to-red-700"
+                        class="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-bl hover:from-red-500 hover:to-red-700"
                     >
                         <i class="fa-brands fa-google-plus"></i> Sign in with Google
                     </button>
