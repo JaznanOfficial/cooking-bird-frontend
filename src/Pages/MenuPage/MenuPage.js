@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SimpleBar from "simplebar-react";
+import "simplebar/dist/simplebar.min.css";
 
 import useFetch from "../../Hooks/useFetch";
 import MenuItems from "./MenuItems";
@@ -10,17 +12,15 @@ const MenuPage = () => {
 
     const [quantity, setQuantity] = useState(0);
 
-    
-
     return (
         <div className="h-full">
-        
-            <div className="container grid grid-rows-2 grid-flow-row lg:grid-cols-4 gap-4 mx-auto my-10">
-                {data.map((menuCard) => {
-                    return <MenuItems key={menuCard.id} menuCard={menuCard} />;
-                })}
-            </div>
-        
+            
+                <div className="container grid grid-rows-2 grid-flow-row lg:grid-cols-4 gap-4 mx-auto my-10">
+                    {data.map((menuCard) => {
+                        return <MenuItems key={menuCard.id} menuCard={menuCard} />;
+                    })}
+                </div>
+           
         </div>
     );
 };

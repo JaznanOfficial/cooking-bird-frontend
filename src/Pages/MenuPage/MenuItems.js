@@ -5,7 +5,7 @@ const MenuItems = ({ menuCard }) => {
     const { name, price, img, items, rating } = menuCard;
     return (
         
-        <div class="bg-rose-50 text-gray-900 w-80 lg:w-10/12 mx-auto my-6">
+        <div class="bg-rose-50 text-gray-900 w-80 lg:w-10/12 mx-auto mb-6">
             <div>
                 <img
                     src={img}
