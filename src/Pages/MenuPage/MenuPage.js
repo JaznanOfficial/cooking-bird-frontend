@@ -15,7 +15,7 @@ const MenuPage = () => {
     return (
         <div className="h-full">
             
-                <div className="container grid grid-rows-2 grid-flow-row lg:grid-cols-4 gap-4 mx-auto my-10">
+                <div className="container grid grid-rows-1 grid-flow-row lg:grid-cols-4 mx-auto my-5">
                     {data.map((menuCard) => {
                         return <MenuItems key={menuCard.id} menuCard={menuCard} />;
                     })}
