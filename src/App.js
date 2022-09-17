@@ -12,7 +12,7 @@ function App() {
 
   return <div className="App">
     <Navbar />
-    <SimpleBar style={{ height: '83vh' }}>
+    <SimpleBar style={{ height: '85vh' }}>
     <Routes>
       <Route path="/" element={<HomePage />}></Route>
       <Route path="/menu" element={<MenuPage />}></Route>
