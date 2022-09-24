@@ -6,6 +6,7 @@ const MenuItems = ({ menuCard }) => {
     return (
         
         <div class="bg-rose-50 text-gray-900 w-80 lg:w-11/12 mx-auto mb-6">
+            
             <div>
                 <img
                     src={img}
