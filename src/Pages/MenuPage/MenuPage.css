@@ -4,18 +4,17 @@
     font-size: 13px;
 }
 
-ul.checkbox-ul {
-    /* list-style: none; */
-    /* padding: 20px; */
-}
+
 ul.checkbox-ul li {
     /* display: inline; */
-    margin: 20px 0;
+    margin: 20px;
+    /* justify-content: start; */
+
 }
 ul.checkbox-ul li label {
-    /* display: inline-block; */
+    display: inline;
     background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid rgba(139, 139, 139, 0.3);
+    /* border: 1px solid #DC2626; */
     border-radius: 25px;
     white-space: nowrap;
     margin: 3px 0px;
@@ -68,3 +67,12 @@ ul.checkbox-ul li input[type="checkbox"] {
     opacity: 0;
 }
 
+
+@media screen and (max-width: 640px) {
+    ul.checkbox-ul li {
+        display: inline-block;
+        margin: 10px;
+        justify-content: start;
+    
+    }
+  }
