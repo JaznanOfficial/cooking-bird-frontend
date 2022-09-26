@@ -22,7 +22,7 @@ const MenuPage = () => {
             </div>
 
             <div className="lg:flex justify-center items-start">
-                <div class=" bg-navy-900 p-5 my-5 lg:w-1/6 sticky top-0">
+                <div class=" bg-navy-900 p-5 my-5 lg:w-1/6 sticky top-0 z-20">
                     <div className="container flex flex-col justify-center items-center">
                         <div className="bg-navy-900 inline rounded-full lg:rounded p-3 mb-2 text-white lg:p-1 lg:mb-0">
                             <h3>
