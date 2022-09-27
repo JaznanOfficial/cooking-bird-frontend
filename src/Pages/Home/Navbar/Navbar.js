@@ -166,12 +166,12 @@ const Navbar = () => {
                             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                         >
                             <li>
-                                <a
-                                    href="/"
+                                <Link
+                                    to="/user-profile"
                                     className="font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 justify-between"
                                 >
                                     Profile<span className="badge">New</span>
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
