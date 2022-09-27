@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div>
-            <div className="flex flex-wrap flex-col lg:flex-row justify-center items-start bg-gray-100 py-8 px-12">
+            <div className="flex flex-wrap flex-col lg:flex-row justify-center items-start bg-sky-50 py-8 px-12">
                 <div className="lg:w-3/12 lg:mx-auto lg:order-2">
                     <div className="flex flex-nowrap justify-center items-center">
                         <img
