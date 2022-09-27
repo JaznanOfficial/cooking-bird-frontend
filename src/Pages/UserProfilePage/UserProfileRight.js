@@ -7,7 +7,7 @@ const UserProfileRight = () => {
         <div>
             <UserOrderPage/>
             <Routes>
-                <Route path="/user-order" element={ <UserOrderPage/>} />
+                <Route path="/user-profile/user-order" element={ <UserOrderPage/>} ></Route>
             </Routes>
         </div>
     );
