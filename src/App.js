@@ -10,6 +10,7 @@ import "simplebar/dist/simplebar.min.css";
 import UserProfilePage from './Pages/UserProfilePage/UserProfilePage';
 import Footer from "./Pages/Home/Footer/Footer";
 import UserOrderPage from "./Pages/UserProfilePage/UserOrderPage";
+import VoucherPage from "./Pages/VoucherPage/VoucherPage";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       
         <Route path="/user-profile/*" element={<UserProfilePage />}>
         <Route path="user-orders" element={<UserOrderPage/>} ></Route>
+        <Route path="user-vouchers" element={<VoucherPage/>} ></Route>
         </Route>
     <Route path="/sign-in" element={<SignInPage/>}></Route>
     <Route path="/sign-up" element={<SignUpPage/>}></Route>
