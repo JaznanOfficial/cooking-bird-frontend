@@ -6,7 +6,7 @@ import UserOrderPage from "./UserOrderPage";
 
 const UserProfileRight = () => {
     return (
-        <div>
+        <div className="w-full">
             
             <Routes>
                 <Route path="/" element={ <UserOrderPage/>} ></Route>

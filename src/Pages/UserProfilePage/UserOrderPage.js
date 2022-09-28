@@ -5,7 +5,7 @@ const UserOrderPage = () => {
         <div className="bg-white p-5 min-h-screen rounded-3xl">
             <h1 className="text-navy-900 text-start text-5xl">Past Orders</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 container mt-8">
-                <div class="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border ">
+                <div class="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
                     <div class="flex justify-start items-start px-4 py-6">
                         <img
                             class="lg:w-36 lg:h-32 w-36 h-20 rounded-full object-cover mr-4 shadow"
@@ -45,7 +45,7 @@ const UserOrderPage = () => {
                         </div>
                     </div>
                 </div>
-                <div class="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border ">
+                <div class="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
                     <div class="flex justify-start items-start px-4 py-6">
                         <img
                             class="lg:w-36 lg:h-32 w-36 h-20 rounded-full object-cover mr-4 shadow"
