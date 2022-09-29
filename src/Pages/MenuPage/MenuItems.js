@@ -5,7 +5,7 @@ const MenuItems = ({ menuCard }) => {
     const { name, price, img, items, rating } = menuCard;
     return (
         
-        <div class="bg-rose-50 text-gray-900 w-80 lg:w-11/12 mx-auto mb-6">
+        <div class=" text-gray-900 w-80 lg:w-11/12 mx-auto mb-6">
             
             <div>
                 <img
@@ -15,7 +15,7 @@ const MenuItems = ({ menuCard }) => {
                 />
 
                 <div class="relative px-4 -mt-16">
-                    <div class="bg-white h-60 p-3 rounded-lg shadow-lg">
+                    <div class="bg-white h-60 p-3 rounded-lg shadow-xl  shadow-rose-100">
                         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate text-navy-900 text-2xl font-black">
                             {name}
                         </h4>
