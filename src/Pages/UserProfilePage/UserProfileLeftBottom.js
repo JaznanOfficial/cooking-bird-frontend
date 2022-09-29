@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const UserProfileLeftBottom = () => {
     return (
-        <div className="sticky top-0">
+        <div>
             <div className="flex items-center justify-center">
                 <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-sm w-full ">
                     <div class="text-gray-100 text-xl">
