@@ -6,13 +6,13 @@ const ShortIcon = () => {
             <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
-                        <i class="fa-regular fa-credit-card"></i>
+                        <i className="fa-regular fa-credit-card"></i>
                     </h1>{" "}
                     <p>100% payment security</p>
                 </div>
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
-                        <i class="fa-solid fa-wallet"></i>
+                        <i className="fa-solid fa-wallet"></i>
                     </h1>
                     <p>Support lots of payment</p>
                 </div>
@@ -20,13 +20,15 @@ const ShortIcon = () => {
             <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
-                    <i class="fa-regular fa-comments"></i>
+                        <i className="fa-regular fa-comments"></i>
                     </h1>
-                    <p>24 hours/ 7 days <br /> support</p>
+                    <p>
+                        24 hours/ 7 days <br /> support
+                    </p>
                 </div>
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
-                    <i class="fa-solid fa-truck"></i>
+                        <i className="fa-solid fa-truck"></i>
                     </h1>
                     <p>Free delivery</p>
                 </div>
@@ -34,13 +36,13 @@ const ShortIcon = () => {
             <div className="flex flex-nowrap justify-center items-center mx-auto">
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
-                    <i class="fa-solid fa-list-check"></i>
+                        <i className="fa-solid fa-list-check"></i>
                     </h1>{" "}
                     <p>Best quality guarantee</p>
                 </div>
                 <div className="mx-6">
                     <h1 className="text-5xl text-red-600">
-                    <i class="fa-brands fa-google-play"></i>
+                        <i className="fa-brands fa-google-play"></i>
                     </h1>
                     <p>Ready mobile apps</p>
                 </div>

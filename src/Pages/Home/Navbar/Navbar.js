@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const menuItems = (
@@ -8,7 +8,7 @@ const Navbar = () => {
             <li>
                 <Link
                     to="/"
-                    className="text-base font-medium hover:bg-red-50 focus:bg-red-50 focus:text-red-600 text-navy-900 hover:text-red-600 " 
+                    className="text-base font-medium hover:bg-red-50 focus:bg-red-50 focus:text-red-600 text-navy-900 hover:text-red-600 "
                 >
                     <i className="fa-solid fa-house-circle-check"></i>
                 </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className="navbar bg-base-100 my-0 py-0">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <label tabindex="0" className="btn btn-ghost lg:hidden">
+                        <label tabIndex="0" className="btn btn-ghost lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
@@ -62,14 +62,14 @@ const Navbar = () => {
                         </label>
 
                         <ul
-                            tabindex="0"
+                            tabIndex="0"
                             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                         >
                             {menuItems}
                         </ul>
 
                         <ul
-                            tabindex="0"
+                            tabIndex="0"
                             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                         >
                             {menuItems}
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div className="dropdown dropdown-end">
                         <label
-                            tabindex="0"
+                            tabIndex="0"
                             className="btn btn-ghost font-medium hover:bg-red-100 btn-circle"
                         >
                             <div className="indicator">
@@ -133,7 +133,7 @@ const Navbar = () => {
                         </label>
 
                         <div
-                            tabindex="0"
+                            tabIndex="0"
                             className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
                         >
                             <div className="card-body">
@@ -153,7 +153,7 @@ const Navbar = () => {
 
                     <div className="dropdown dropdown-end">
                         <label
-                            tabindex="0"
+                            tabIndex="0"
                             className="btn btn-ghost btn-circle hover:bg-red-300 avatar"
                         >
                             <div className="w-10 rounded-full">
@@ -162,7 +162,7 @@ const Navbar = () => {
                         </label>
 
                         <ul
-                            tabindex="0"
+                            tabIndex="0"
                             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                         >
                             <li>
@@ -194,7 +194,8 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <Link to="/sign-in"
+                    <Link
+                        to="/sign-in"
                         className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                     >
                         sign in
