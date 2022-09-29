@@ -36,6 +36,7 @@ const MenuItems = ({ menuCard }) => {
                                     fullSymbol="fa fa-star"
                                     fractions={2}
                                     initialRating={rating}
+                                    readonly
                                 />
                             </span>
                         </div>

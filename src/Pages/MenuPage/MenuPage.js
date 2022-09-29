@@ -24,7 +24,7 @@ const MenuPage = () => {
             <div className="lg:flex justify-center items-start">
                 <div class=" bg-white font-semibold text-center rounded-3xl border shadow-md shadow-red-100 p-6 max-w-sm lg:w-1/6 my-5  sticky top-0 z-20">
                     <div className="container flex flex-col justify-center items-center">
-                        <div className="bg-navy-900 inline rounded-full lg:rounded p-3 mb-2 text-white lg:p-1 lg:mb-0">
+                        <div className=" inline rounded-full lg:rounded p-3 mb-2 text-navy-900 lg:p-1 lg:mb-0">
                             <h3>
                                 Filter your food as you like...
                             </h3>
