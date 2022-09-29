@@ -22,7 +22,7 @@ const Footer = () => {
                             appstore
                         </p>
                     </div>
-                    
+
                     <div className="flex flex-nowrap justify-center items-center mt-3">
                         <a
                             href="https://github.com/jaznanofficial"
@@ -30,7 +30,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="m-2 p-1 border hover:border-red-600 border-navy-900 rounded-full  text-white  transition-colors duration-500 bg-navy-900 hover:bg-red-600 w-10"
                         >
-                            <i class="fa-brands fa-github-alt text-2xl  m-0 p-0"></i>
+                            <i className="fa-brands fa-github-alt text-2xl  m-0 p-0"></i>
                         </a>
                         <a
                             href="https://www.linkedin.com/in/jaznanofficial/"
@@ -38,7 +38,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="m-2 p-1 border hover:border-red-600 border-navy-900 rounded-full  text-white  transition-colors duration-500 bg-navy-900 hover:bg-red-600 w-10"
                         >
-                            <i class="fa-brands fa-linkedin-in text-2xl m-0 p-0"></i>
+                            <i className="fa-brands fa-linkedin-in text-2xl m-0 p-0"></i>
                         </a>
                         <a
                             href="https://www.facebook.com/jaznan.official"
@@ -46,7 +46,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="m-2 p-1 border hover:border-red-600 border-navy-900 rounded-full  text-white  transition-colors duration-500 bg-navy-900 hover:bg-red-600 w-10"
                         >
-                            <i class="fa-brands fa-facebook-f text-2xl m-0 p-0"></i>
+                            <i className="fa-brands fa-facebook-f text-2xl m-0 p-0"></i>
                         </a>
                         <a
                             href="https://twitter.com/jaznanofficial"
@@ -54,10 +54,9 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="m-2 p-1 border hover:border-red-600 border-navy-900 rounded-full  text-white  transition-colors duration-500 bg-navy-900 hover:bg-red-600 w-10"
                         >
-                            <i class="fa-brands fa-twitter text-2xl m-0 p-0"></i>
+                            <i className="fa-brands fa-twitter text-2xl m-0 p-0"></i>
                         </a>
                     </div>
-
                 </div>
                 <div className="lg:w-3/12 lg:mx-auto my-10 lg:order-3">
                     <img
@@ -102,7 +101,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-wrap justify-center items-center h-20 bg-black border rounded-tl-full rounded-tr-full">
-                <h1 className="text-white mx-10">Copyright © 2022 Design & Developed by <span className="font-bold text-red-600">Team Cooking Bird</span></h1>
+                <h1 className="text-white mx-10">
+                    Copyright © 2022 Design & Developed by{" "}
+                    <span className="font-bold text-red-600">Team Cooking Bird</span>
+                </h1>
             </div>
         </div>
     );
