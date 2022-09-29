@@ -8049,6 +8049,11 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-scroll-to-top@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-scroll-to-top/-/react-scroll-to-top-3.0.0.tgz#002984419d4d10fdb5654c9e3dd3341f81209a60"
+  integrity sha512-I/k45Ujai097du59tHBbzGxN7Lyc6K8Uc3IChq6HMXaBfB8N/rrfm055T5Yv0DWfVpf6pOFaBmhD3LOfH5unGw==
+
 react-scrollbar@^0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/react-scrollbar/-/react-scrollbar-0.5.6.tgz#bd57b45714f8d70e56813fe299d7fb3a2e42a27b"
@@ -8066,6 +8071,13 @@ react-scrollbars-custom@^4.1.1:
     cnbuilder "^3.1.0"
     react-draggable "^4.4.5"
     zoom-level "^2.5.0"
+
+react-whatsapp-widget@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-whatsapp-widget/-/react-whatsapp-widget-2.1.0.tgz#e4d56ad744c35e3536f673ee84c62a5bb55df9a4"
+  integrity sha512-ilrA0axcs/h0xYZj2CtVoOt9DCFqtGpkFXm22vvht0+tw8tbF3lGIkO0+AVyFpgGa7suhO8Ss7dlm9D+9yzpHg==
+  dependencies:
+    react-icons "^4.4.0"
 
 react@^18.2.0:
   version "18.2.0"
