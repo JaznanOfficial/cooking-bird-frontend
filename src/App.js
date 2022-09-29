@@ -11,11 +11,20 @@ import UserOrderPage from "./Pages/UserProfilePage/UserOrderPage";
 import VoucherPage from "./Pages/VoucherPage/VoucherPage";
 import AddressPage from "./Pages/AddressPage/AddressPage";
 import ScrollToTop from "react-scroll-to-top";
+import { ReactComponent as CompanyIcon } from "./cooking-bird.svg";
+import { WhatsAppWidget } from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 function App() {
     return (
-      <div className="App">
-        <ScrollToTop smooth color="#FE1A00" viewBox="0 0 150 250" style={{borderRadius:"50%"}}/>
+        <div className="App">
+            <WhatsAppWidget CompanyIcon={CompanyIcon} phoneNumber="8801643282147"  />
+            <ScrollToTop
+                smooth
+                color="#FE1A00"
+                viewBox="0 0 150 250"
+                style={{ borderRadius: "50%", marginBottom: "60px" }}
+            />
             <Navbar />
 
             <Routes>

@@ -8072,6 +8072,13 @@ react-scrollbars-custom@^4.1.1:
     react-draggable "^4.4.5"
     zoom-level "^2.5.0"
 
+react-whatsapp-widget@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-whatsapp-widget/-/react-whatsapp-widget-2.1.0.tgz#e4d56ad744c35e3536f673ee84c62a5bb55df9a4"
+  integrity sha512-ilrA0axcs/h0xYZj2CtVoOt9DCFqtGpkFXm22vvht0+tw8tbF3lGIkO0+AVyFpgGa7suhO8Ss7dlm9D+9yzpHg==
+  dependencies:
+    react-icons "^4.4.0"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"

@@ -24,6 +24,7 @@
     "react-scroll-to-top": "^3.0.0",
     "react-scrollbar": "^0.5.6",
     "react-scrollbars-custom": "^4.1.1",
+    "react-whatsapp-widget": "^2.1.0",
     "simplebar-react": "^2.4.1",
     "web-vitals": "^2.1.0"
   },
