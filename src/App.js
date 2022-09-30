@@ -40,7 +40,7 @@ function App() {
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
             </Routes>
             <Footer />
-            <WhatsAppWidget CompanyIcon={CompanyIcon} phoneNumber="8801643282147" className='z-30' />
+            <WhatsAppWidget CompanyIcon={CompanyIcon} companyName='Cooking Bird' message='Hello! 👋🏼 welcome to Cooking Bird Support. How can we assist you?' phoneNumber="8801643282147" />
         </div>
     );
 }
