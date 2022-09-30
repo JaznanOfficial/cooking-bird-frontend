@@ -18,12 +18,13 @@ import "react-whatsapp-widget/dist/index.css";
 function App() {
     return (
         <div className="App">
-            <WhatsAppWidget CompanyIcon={CompanyIcon} phoneNumber="8801643282147"  />
+            
             <ScrollToTop
                 smooth
                 color="#FE1A00"
                 viewBox="0 0 150 250"
-                style={{ borderRadius: "50%", marginBottom: "60px" }}
+                style={{ borderRadius: "50%", right: 30, bottom: 100 }}
+                
             />
             <Navbar />
 
@@ -39,6 +40,7 @@ function App() {
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
             </Routes>
             <Footer />
+            <WhatsAppWidget CompanyIcon={CompanyIcon} phoneNumber="8801643282147" className='z-30' />
         </div>
     );
 }
