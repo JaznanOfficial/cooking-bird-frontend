@@ -90,7 +90,7 @@ const MenuPage = () => {
                     </div>
                 </div>
 
-                <div className="container grid grid-rows-1 grid-flow-row lg:grid-cols-4 mx-auto my-5">
+                <div className="container grid grid-rows-1 grid-flow-row lg:grid-cols-4 md:grid-cols-2 mx-auto my-5">
                     {data.map((menuCard) => {
                         return <MenuItems key={menuCard.id} menuCard={menuCard} />;
                     })}
