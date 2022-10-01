@@ -40,9 +40,9 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0">
-            <div className="navbar bg-base-100 my-0 py-0">
-                <div className="navbar-start">
+        <div className="mx-0 w-full px-0 sm:px-6 lg:px-0 py-0  sticky top-0 z-20">
+            <div className="navbar bg-base-100 my-0 py-0 w-full lg:px-8">
+                <div className="navbar-start mx-0">
                     <div className="dropdown">
                         <label tabIndex="0" className="btn btn-ghost lg:hidden">
                             <svg
@@ -140,12 +140,12 @@ const Navbar = () => {
                                 <span className="font-bold text-lg">8 Items</span>
                                 <span className="text-info">Subtotal: $999</span>
                                 <div className="card-actions">
-                                    <a
-                                        href="/"
+                                    <Link
+                                        to="/cart"
                                         className="btn-block ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
                                     >
                                         View cart
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ const Navbar = () => {
                                     to="/user-profile"
                                     className="font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 justify-between"
                                 >
-                                    Profile<span className="badge">New</span>
+                                    Profile
                                 </Link>
                             </li>
 
