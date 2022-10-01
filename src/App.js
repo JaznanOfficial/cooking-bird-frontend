@@ -14,6 +14,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { ReactComponent as CompanyIcon } from "./cooking-bird.svg";
 import { WhatsAppWidget } from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
+import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                 </Route>
                 <Route path="/sign-in" element={<SignInPage />}></Route>
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
+                <Route path="/*" element={<NotFoundPage />}></Route>
             </Routes>
             <Footer />
             <WhatsAppWidget CompanyIcon={CompanyIcon} companyName='Cooking Bird' message='Hello! 👋🏼 welcome to Cooking Bird Support. How can we assist you?' phoneNumber="8801643282147" />
