@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 ubuntu: ["Ubuntu", "sans-serif"],
+                monoton:["Monoton", "cursive", "Ubuntu", "sans-serif"],
             },
             colors: {
                 "navy-900": "#231E41",
