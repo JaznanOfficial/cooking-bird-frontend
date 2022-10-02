@@ -45,7 +45,7 @@ const CartPageRight = () => {
                                 </td>
                                 <td class="p-2">
                                     <div class="text-left font-medium text-green-500 lg:text-xl">
-                                        RM 2,890.66
+                                        BDT 2,890.66
                                     </div>
                                 </td>
                                 <td class="p-2">
@@ -88,7 +88,7 @@ const CartPageRight = () => {
                                 </td>
                                 <td class="p-2">
                                     <div class="text-left font-medium text-green-500 lg:text-xl">
-                                        RM 2,890.66
+                                    BDT 2,890.66
                                     </div>
                                 </td>
                                 <td class="p-2">

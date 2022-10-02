@@ -1,22 +1,50 @@
-import React from 'react';
+import React from "react";
 
 const CartPageLeft = () => {
     return (
-        <div className="lg:w-64 sticky top-16 lg:top-20 z-10">
+        <div className="lg:w-64 sticky top-16 lg:top-20">
             <div className="flex items-center justify-center">
-                <div className="bg-white font-semibold text-center rounded-3xl border shadow-lg py-5 max-w-sm w-full  sticky top-0">
+                <div className="bg-white font-semibold text-center rounded-3xl border shadow-lg py-5 max-w-sm w-full">
                     <img
                         className="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
                         src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                         alt="product designer"
                     />
-                    <h1 className="text-lg text-gray-700"> John Doe </h1>
-                    <h3 className="text-sm text-gray-400 "> Creative Director </h3>
-                    <p className="text-xs text-gray-400 mt-4"> +880123456789</p>
-                    <p className="text-xs text-gray-400 mt-4"> abc@gmail.com</p>
-                    <button className="bg-red-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
-                        Edit Profile
-                    </button>
+                    <h1 className="text-lg text-red-700"> John Doe </h1>
+                    <div className="p-5 pb-0">
+                        <div class="flex items-center justify-between">
+                            <p class="text-base leading-none text-gray-800 dark:text-white">
+                                Subtotal
+                            </p>
+                            <p class="text-base leading-none text-gray-800 dark:text-white">500</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-5">
+                            <p class="text-base leading-none text-gray-800 dark:text-white">
+                                Shipping
+                            </p>
+                            <p class="text-base leading-none text-gray-800 dark:text-white">50</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-5">
+                            <p class="text-base leading-none text-gray-800 dark:text-white">Tax</p>
+                            <p class="text-base leading-none text-gray-800 dark:text-white">10</p>
+                        </div>
+                        <hr className="border mt-5"/>
+                        <div class="flex items-center pb-6 justify-between lg:pt-5 pt-20">
+                            <p class="text-2xl leading-normal text-gray-800 dark:text-white">
+                                Total
+                            </p>
+                            <p class="text-2xl font-bold leading-normal text-right text-gray-800 dark:text-white">
+                                560
+                            </p>
+                        </div>
+                        <button
+                            onclick="checkoutHandler1(true)"
+                            class="text-base leading-none w-full py-5 bg-green-600 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white dark:hover:bg-gray-700 rounded-md"
+                        >
+                            Checkout
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         </div>
