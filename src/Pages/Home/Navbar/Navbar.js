@@ -40,7 +40,7 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="mx-0 w-full px-0 sm:px-6 lg:px-0 py-0  sticky top-0 z-20">
+        <div className="mx-0 w-full px-0 sm:px-6 lg:px-0 py-0  sticky top-0 z-30">
             <div className="navbar bg-base-100 my-0 py-0 w-full lg:px-8">
                 <div className="navbar-start mx-0">
                     <div className="dropdown">
@@ -128,7 +128,7 @@ const Navbar = () => {
                                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                                     />
                                 </svg>
-                                <span className="badge badge-sm indicator-item">8</span>
+                                <span className="badge badge-sm indicator-item bg-navy-900">8</span>
                             </div>
                         </label>
 
@@ -138,11 +138,11 @@ const Navbar = () => {
                         >
                             <div className="card-body">
                                 <span className="font-bold text-lg">8 Items</span>
-                                <span className="text-info">Subtotal: $999</span>
-                                <div className="card-actions">
+                                <span className="text-info">Total: $ 999</span>
+                                <div className="card-actions mx-0">
                                     <Link
                                         to="/cart"
-                                        className="btn-block ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
+                                        className="btn-block inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-600"
                                     >
                                         View cart
                                     </Link>
@@ -186,7 +186,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     href="/"
-                                    className="ml-3 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
+                                    className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                                 >
                                     Logout
                                 </a>
