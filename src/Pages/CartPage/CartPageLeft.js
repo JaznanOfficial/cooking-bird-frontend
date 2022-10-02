@@ -2,15 +2,17 @@ import React from "react";
 
 const CartPageLeft = () => {
     return (
-        <div className="lg:w-64 sticky top-16 lg:top-20">
-            <div className="flex items-center justify-center">
+        <div className="sticky top-16 lg:top-20">
+            <div className="flex items-center justify-center lg:w-64 ">
                 <div className="bg-white font-semibold text-center rounded-3xl border shadow-lg py-5 max-w-sm w-full">
-                    <img
-                        className="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
-                        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                        alt="product designer"
-                    />
-                    <h1 className="text-lg text-red-700"> John Doe </h1>
+                    <div className="hidden lg:block">
+                        <img
+                            className="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
+                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                            alt="product designer"
+                        />
+                        <h1 className="text-lg text-red-700"> John Doe </h1>
+                    </div>
                     <div className="p-5 pb-0">
                         <div class="flex items-center justify-between">
                             <p class="text-base leading-none text-gray-800 dark:text-white">
@@ -28,8 +30,8 @@ const CartPageLeft = () => {
                             <p class="text-base leading-none text-gray-800 dark:text-white">Tax</p>
                             <p class="text-base leading-none text-gray-800 dark:text-white">10</p>
                         </div>
-                        <hr className="border mt-5"/>
-                        <div class="flex items-center pb-6 justify-between lg:pt-5 pt-20">
+                        <hr className="border mt-5" />
+                        <div class="flex items-center pb-6 justify-between pt-5 ">
                             <p class="text-2xl leading-normal text-gray-800 dark:text-white">
                                 Total
                             </p>
@@ -44,7 +46,6 @@ const CartPageLeft = () => {
                             Checkout
                         </button>
                     </div>
-                    
                 </div>
             </div>
         </div>

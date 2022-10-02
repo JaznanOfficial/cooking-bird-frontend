@@ -4,7 +4,7 @@ import CartPageRight from './CartPageRight';
 
 const CartPage = () => {
     return (
-        <div className=' lg:flex lg:flex-row-reverse justify-center items-start bg-sky-50 lg:p-12 pt-4 gap-4' >
+        <div className=' lg:flex lg:flex-row-reverse justify-center items-start bg-sky-50 lg:px-12 lg:py-8  gap-4' >
             <CartPageLeft />
             <CartPageRight/>
         </div>
