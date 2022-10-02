@@ -4,6 +4,7 @@ import Cooks from "../Cooks/Cooks";
 import MenuCard from "../MenuCard/MenuCard";
 import OurProcess from "../OurProcess/OurProcess";
 import ShortIcon from "../ShortIcon/ShortIcon";
+import Footer from '../Footer/Footer';
 
 const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ const HomePage = () => {
             <MenuCard />
             <Cooks />
             <ShortIcon />
+            <Footer/>
         </div>
     );
 };

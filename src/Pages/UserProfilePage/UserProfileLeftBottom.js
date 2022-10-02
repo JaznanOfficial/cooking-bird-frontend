@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const UserProfileLeftBottom = () => {
     return (
-        <div>
-            <div className="flex items-center justify-center">
+        
+            <div className="flex items-center justify-center sticky top-0">
                 <div className="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-sm w-full ">
                     <div className="text-gray-100 text-xl">
                         {/* <div className="p-2.5 mt-1 flex items-center">
@@ -41,7 +41,7 @@ const UserProfileLeftBottom = () => {
                     </Link>
                 </div>
             </div>
-        </div>
+        
     );
 };
 

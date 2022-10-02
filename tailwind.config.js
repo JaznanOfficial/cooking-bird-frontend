@@ -5,14 +5,22 @@ module.exports = {
         extend: {
             fontFamily: {
                 ubuntu: ["Ubuntu", "sans-serif"],
-                monoton:["Monoton", "cursive", "Ubuntu", "sans-serif"],
+                monoton: ["Monoton", "cursive", "Ubuntu", "sans-serif"],
             },
             colors: {
                 "navy-900": "#231E41",
             },
         },
     },
-
+daisyui: {
+        themes: [
+            {
+                mytheme: {
+                    primary: "#fecaca",
+                },
+            },
+        ],
+    },
     plugins: [require("daisyui", "flowbite/plugin")],
-
+    
 };

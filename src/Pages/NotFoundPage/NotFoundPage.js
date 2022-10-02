@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
     return (
-        <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row-reverse justify-around items-center mt-20 mb-20 lg:mb-0 mx-auto gap-10 lg:gap-4">
+        <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row-reverse justify-around items-center mt-20 mb-20 mb-0 mx-auto gap-10 lg:gap-4">
             <div className="w-full">
                 <img
                     src="https://elanta.app/nazar/starbelly-demo/img/illustrations/man.png"
                     alt="not found img"
                 />
             </div>
-            <div className="container w-full  mx-10 ">
+            <div className="container w-full  mx-10 pb-10">
                 <h1 className="font-monoton text-6xl text-red-600">404</h1>
                 <h1 className="text-8xl font-bold font-ubuntu text-navy-900 my-10">
                     Oops! Where are we?
