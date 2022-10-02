@@ -15,17 +15,16 @@ import { WhatsAppWidget } from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import CartPage from "./Pages/CartPage/CartPage";
+import UserInvoice from "./Pages/UserProfilePage/UserInvoice";
 
 function App() {
     return (
         <div className="App">
-            
             <ScrollToTop
                 smooth
                 color="#FE1A00"
                 viewBox="0 0 150 250"
                 style={{ borderRadius: "50%", right: 30, bottom: 100 }}
-                
             />
             <Navbar />
 
@@ -33,17 +32,25 @@ function App() {
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/menu" element={<MenuPage />}></Route>
                 <Route path="/cart" element={<CartPage />}></Route>
-                <Route path="/user-profile/*" element={<UserProfilePage />}>
-                    <Route path="user-orders" element={<UserOrderPage />}></Route>
+                <Route path="/user-profile" element={<UserProfilePage />}>
+                    <Route path="user-orders" element={<UserOrderPage />}>
+                        
+                    </Route>
                     <Route path="user-vouchers" element={<VoucherPage />}></Route>
                     <Route path="user-addresses" element={<AddressPage />}></Route>
                 </Route>
                 <Route path="/sign-in" element={<SignInPage />}></Route>
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
                 <Route path="/*" element={<NotFoundPage />}></Route>
+                <Route path="/user-invoices/:id" element={<UserInvoice />}></Route>
             </Routes>
-            
-            <WhatsAppWidget CompanyIcon={CompanyIcon} companyName='Cooking Bird' message='Hello! 👋🏼 welcome to Cooking Bird Support. How can we assist you?' phoneNumber="8801643282147" />
+
+            <WhatsAppWidget
+                CompanyIcon={CompanyIcon}
+                companyName="Cooking Bird"
+                message="Hello! 👋🏼 welcome to Cooking Bird Support. How can we assist you?"
+                phoneNumber="8801643282147"
+            />
         </div>
     );
 }
