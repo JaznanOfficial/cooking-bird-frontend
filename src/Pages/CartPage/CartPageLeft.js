@@ -2,7 +2,7 @@ import React from 'react';
 
 const CartPageLeft = () => {
     return (
-        <div className="container mx-auto">
+        <div className="lg:w-64 sticky top-16 lg:top-20 z-10">
             <div className="flex items-center justify-center">
                 <div className="bg-white font-semibold text-center rounded-3xl border shadow-lg py-5 max-w-sm w-full  sticky top-0">
                     <img

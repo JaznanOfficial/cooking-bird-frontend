@@ -3,7 +3,7 @@ import React from "react";
 const CartPageRight = () => {
     return (
         <div className="w-full">
-            <div className="bg-white p-5  min-h-screen rounded-3xl">
+            <div className="bg-white p-5 rounded-3xl">
                 <h1 className="text-navy-900 text-start text-5xl">Available Vouchers</h1>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 container mt-8">
                     <div className="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
