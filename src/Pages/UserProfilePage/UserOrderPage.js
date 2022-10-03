@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const UserOrderPage = () => {
     return (
@@ -44,9 +45,9 @@ const UserOrderPage = () => {
                                     </h6>
                                 </div>
                                 <div>
-                                    <button className="bg-red-600 px-2 py-1 rounded-3xl text-gray-100 tracking-wide hover:bg-red-500 ">
-                                        Order Again
-                                    </button>
+                                    <Link to={'/user-invoices/1'} className="bg-red-600 px-2 py-1 rounded-3xl text-gray-100 tracking-wide hover:bg-red-500 ">
+                                        See invoice
+                                    </Link>
                                 </div>
                             </div>
                         </div>
