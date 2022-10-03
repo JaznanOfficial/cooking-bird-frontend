@@ -16,6 +16,7 @@ import "react-whatsapp-widget/dist/index.css";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import CartPage from "./Pages/CartPage/CartPage";
 import UserInvoice from "./Pages/UserProfilePage/UserInvoice";
+import AboutPage from "./Pages/AboutPage/AboutPage";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/menu" element={<MenuPage />}></Route>
                 <Route path="/cart" element={<CartPage />}></Route>
+                <Route path="/about-&-contact" element={<AboutPage />}></Route>
                 <Route path="/user-profile" element={<UserProfilePage />}>
                     <Route path="user-orders" element={<UserOrderPage />}>
                         
