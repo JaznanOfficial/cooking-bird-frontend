@@ -13,7 +13,7 @@ const MenuItems = ({ menuCard }) => {
                 />
 
                 <div className="relative px-4 -mt-16">
-                    <div className="bg-white h-60 p-3 rounded-lg shadow-xl  shadow-rose-100">
+                    <div className="bg-white h-48 p-3 rounded-lg shadow-xl  shadow-rose-100 flex flex-col justify-end">
                         <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate text-navy-900 text-2xl font-black">
                             {name}
                         </h4>
@@ -38,21 +38,7 @@ const MenuItems = ({ menuCard }) => {
                                 />
                             </span>
                         </div>
-                        <div className="mt-2 flex justify-center items-center">
-                            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-red-600 rounded-lg group bg-gradient-to-br from-red-500 via-red-600 to-red-700 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
-                                <span className="relative px-3 py-1.5 transition-all ease-in duration-300 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 hover:text-white">
-                                    <i className="fa-solid fa-minus"></i>
-                                </span>
-                            </button>
-                            <h1 className="text-black text-md font-semibold mx-3 mb-2 font-black text-2xl">
-                                1
-                            </h1>
-                            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-red-600 rounded-lg group bg-gradient-to-br from-red-500 via-red-500 to-red-700 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
-                                <span className="relative px-3 py-1.5 transition-all ease-in duration-300 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 hover:text-white">
-                                    <i className="fa-solid fa-plus"></i>
-                                </span>
-                            </button>
-                        </div>
+                        
                         <div>
                             <button
                                 type="button"
