@@ -4,9 +4,9 @@ const VoucherPage = () => {
     return (
         <div className="bg-white p-5  min-h-screen rounded-3xl">
             <h1 className="text-navy-900 text-start text-5xl">Available Vouchers</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 container mt-8">
-                <div className="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
-                    <div className="flex justify-start items-start px-6 py-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 container mt-8 justify-center items-center">
+                <div className="flex bg-white shadow-lg rounded-3xl md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
+                    <div className="flex justify-start items-start px-6 py-6 mx-auto">
                         <div className="text-start">
                             <div className="flex items-center justify-between">
                                 <h2 className="text-lg font-semibold text-gray-900 -mt-1 text-red-600 uppercase bg-orange-100 p-3">
@@ -37,7 +37,7 @@ const VoucherPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
+                <div className="flex bg-white shadow-lg rounded-3xl md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
                     <div className="flex justify-start items-start px-6 py-6">
                         <div className="text-start">
                             <div className="flex items-center justify-between">

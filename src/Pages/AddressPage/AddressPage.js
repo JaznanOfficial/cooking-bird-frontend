@@ -7,7 +7,7 @@ const AddressPage = () => {
             <h1 className="text-navy-900 text-start text-5xl">Users Addresses</h1>
             <AddressModal />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 container mt-3 w-full">
-                <div className="flex bg-white shadow-lg rounded-3xl mx-4 md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
+                <div className="flex bg-white shadow-lg rounded-3xl md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto">
                     <div className="flex justify-start items-start px-6 py-6">
                         <div className="text-start">
                             <div className="flex items-center justify-between">
