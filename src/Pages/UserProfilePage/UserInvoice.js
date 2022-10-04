@@ -6,9 +6,9 @@ const UserInvoice = () => {
     return (
         
         <Document>
-            <div size={"A4"} className="p-10 lg:p-20">
-                <div className="shadow-2xl shadow-navy-900 p-10">
-                    <div className="flex flex-col lg:flex-row justify-around items-center m-10 gap-4">
+            <div size={"A4"} className="p-5 lg:p-20">
+                <div className="shadow-2xl shadow-navy-900 lg:p-10">
+                    <div className="flex flex-col lg:flex-row justify-around items-center lg:m-10 gap-4">
                         <div>
                             <img
                                 class="img w-32"
@@ -30,7 +30,7 @@ const UserInvoice = () => {
                         <h1>12345674984855165</h1>
                     </div>
                     <div>
-                        <div className="w-2/3 mx-auto my-5">
+                        <div className="lg:w-2/3 w-full mx-auto my-5">
                             <Table striped={true}>
                                 <Table.Head>
                                     <Table.HeadCell>Product name</Table.HeadCell>

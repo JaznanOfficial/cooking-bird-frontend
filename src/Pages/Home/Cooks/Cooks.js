@@ -42,7 +42,7 @@ const Cooks = () => {
 
     return (
         <div className="py-8">
-            <div className="card pl-20 text-center">
+            <div className="card  text-center">
                 <h1 className="text-navy-900 text-4xl font-ubuntu py-8">They will cook for you</h1>
                 <h6>
                     Consectetur numquam poro nemo veniam <br />
