@@ -15,8 +15,7 @@ const BookTable = () => {
           </h1>
           <div className="flex justify-center items-center">
             <p className="text-center text-normal text-navy-900 w-80">
-              Consectetur numquam poro nemo veniam eligendi rem adipisci quo
-              modi.
+            Thank you for visiting us! <br /> We hope you find what you're looking for and that you enjoy your stay. We look forward to serving you. Have a great day!
             </p>
           </div>
         </div>
