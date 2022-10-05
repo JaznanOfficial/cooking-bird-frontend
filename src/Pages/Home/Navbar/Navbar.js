@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    to="/book-a-table"
+                    to="/book-table"
                     className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
                 >
                     Book a Table
