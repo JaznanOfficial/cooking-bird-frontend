@@ -19,11 +19,6 @@ const BookTable = () => {
               modi.
             </p>
           </div>
-          <Link to="/">
-            <button className="bg-red-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
-              <i class="fa-solid fa-tent-arrow-turn-left"></i> Go to home please{" "}
-            </button>{" "}
-          </Link>
         </div>
         
         <div className="w-full">
@@ -57,6 +52,7 @@ const BookTable = () => {
                 <div class="mb-3">
                   <input
                     type="tel"
+                    // type="number"
                     placeholder="Phone number"
                     pattern="[0-9]{11}"
                     maxLength="11"
