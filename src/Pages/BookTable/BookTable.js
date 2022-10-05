@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BookTable = () => {
   return (
     <div>
-      <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row justify-around items-center mt-7 mb-20 mx-auto gap-10 lg:gap-4">
+      <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row justify-around items-center mx-auto gap-10 lg:gap-4">
          
         <div className="container w-full  mx-10 pb-10">
           <h1 className="font-monoton text-3xl text-red-600">Reservation</h1>
@@ -15,15 +15,9 @@ const BookTable = () => {
           </h1>
           <div className="flex justify-center items-center">
             <p className="text-center text-normal text-navy-900 w-80">
-              Consectetur numquam poro nemo veniam eligendi rem adipisci quo
-              modi.
+            Thank you for visiting us! <br /> We hope you find what you're looking for and that you enjoy your stay. We look forward to serving you. Have a great day!
             </p>
           </div>
-          <Link to="/">
-            <button className="bg-red-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
-              <i class="fa-solid fa-tent-arrow-turn-left"></i> Go to home please{" "}
-            </button>{" "}
-          </Link>
         </div>
         
         <div className="w-full">
@@ -57,6 +51,7 @@ const BookTable = () => {
                 <div class="mb-3">
                   <input
                     type="tel"
+                    // type="number"
                     placeholder="Phone number"
                     pattern="[0-9]{11}"
                     maxLength="11"
@@ -71,6 +66,7 @@ const BookTable = () => {
                     placeholder="How many guest are you bringing?"
                     required
                     min="0"
+                    max="8"
                     class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-600 focus:shadow-md"
                   />
                 </div>
