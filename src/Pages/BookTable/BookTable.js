@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BookTable = () => {
   return (
     <div>
-      <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row justify-around items-center mt-7 mb-20 mx-auto gap-10 lg:gap-4">
+      <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row justify-around items-center mx-auto gap-10 lg:gap-4">
          
         <div className="container w-full  mx-10 pb-10">
           <h1 className="font-monoton text-3xl text-red-600">Reservation</h1>
