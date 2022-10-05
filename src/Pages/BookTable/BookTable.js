@@ -66,6 +66,7 @@ const BookTable = () => {
                     placeholder="How many guest are you bringing?"
                     required
                     min="0"
+                    max="8"
                     class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-600 focus:shadow-md"
                   />
                 </div>
