@@ -17,6 +17,7 @@ import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import CartPage from "./Pages/CartPage/CartPage";
 import UserInvoice from "./Pages/UserProfilePage/UserInvoice";
 import AboutPage from "./Pages/AboutPage/AboutPage";
+import BookTable from "./Pages/BookTable/BookTable";
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                 </Route>
                 <Route path="/sign-in" element={<SignInPage />}></Route>
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
+                <Route path="/book-table" element={<BookTable />}></Route>
                 <Route path="/*" element={<NotFoundPage />}></Route>
                 <Route path="/user-invoices/:id" element={<UserInvoice />}></Route>
             </Routes>
