@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BookTable = () => {
   return (
     <div>
-      <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row justify-around items-center mx-auto gap-10 lg:gap-4">
+      <div className="container flex flex-wrap lg:flex-nowrap lg:flex-row justify-around items-center mx-auto pb-8 gap-10 lg:gap-4">
          
         <div className="container w-full  mx-10 pb-10">
           <h1 className="font-monoton text-3xl text-red-600">Reservation</h1>
@@ -100,32 +100,6 @@ const BookTable = () => {
                         required
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-red-600 focus:shadow-md"
                       />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mb-5">
-                  <label class="mb-3 block text-base font-medium">
-                    Are you coming to the event?
-                  </label>
-                  <div class="flex items-center space-x-6">
-                    <div class="flex items-center">
-                      <input type="radio" class="h-5 w-5" />
-                      <label
-                        for="radioButton1"
-                        class="pl-3 text-base font-medium"
-                      >
-                        Yes
-                      </label>
-                    </div>
-                    <div class="flex items-center">
-                      <input type="radio" class="h-5 w-5" />
-                      <label
-                        for="radioButton2"
-                        class="pl-3 text-base font-medium"
-                      >
-                        No
-                      </label>
                     </div>
                   </div>
                 </div>
