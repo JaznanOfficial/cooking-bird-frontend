@@ -31,12 +31,12 @@ const BannerCategories = () => {
     {
       _id: 6,
       name: "Beef",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3v9Iaf-zVq2nvbRAgwiwGhanXqjCbKOXFQA&usqp=CAU"
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSspEMq477m7oM0nIE0Bc48hqSH8Hg35RqtMQ&usqp=CAU"
     },
     {
       _id: 7,
       name: "Chickens",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsbl-mlPrKQnvtnnfp4aLx2_9RxIkZa6BAw&usqp=CAU"
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFT9Zn--oXAQpJtbci8k42r_ERG0LqFAenH74CANV2p1ukILbJNL_5cQt7yEj5-A-W1fU&usqp=CAU"
     },
     {
       _id: 8,
