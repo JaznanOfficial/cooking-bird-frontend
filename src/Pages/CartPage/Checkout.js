@@ -142,7 +142,7 @@ const Checkout = () => {
                 class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-red-300 dark:focus:border-red-300 focus:ring-red-300 focus:outline-none focus:ring focus:ring-opacity-40"
               />
 
-              <h1 className="text-navy-900 text-2xl font-ubuntu py-8">Additional information</h1> <br />
+              <h1 className="text-navy-900 text-xl font-ubuntu py-8">Additional information</h1> <br />
               
               <div class="flex flex-row justify-center items-center my-6">
                 <hr class="border w-full" />
