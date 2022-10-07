@@ -49,16 +49,10 @@ const CartPageLeft = () => {
                             </p>
                         </div>
 
-                        <button
-                            onclick="checkoutHandler1(true)"
-                            class="text-base leading-none w-full py-5 bg-green-600 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white dark:hover:bg-gray-700 rounded-md"
-                        >
-                            Checkout
-                        </button>
                         <Link
                             to="/check-out"
                             type="submit"
-                            className="block w-full  mt-4 py-4 rounded-2xl text-white font-semibold mb-2 "
+                            className="block w-full  mt-4 py-4 rounded-md text-white font-semibold mb-2 "
                             style={{ background: `url(${background})` }}
                             >
                                 Checkout
