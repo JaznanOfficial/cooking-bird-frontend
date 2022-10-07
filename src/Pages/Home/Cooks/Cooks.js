@@ -45,8 +45,8 @@ const Cooks = () => {
             <div className="card  text-center">
                 <h1 className="text-navy-900 text-4xl font-ubuntu py-8">They will cook for you</h1>
                 <h6>
-                    Consectetur numquam poro nemo veniam <br />
-                    eligendi rem adipisci quo modi.
+                Cooking is a way to demonstrate your love. <br />
+                Cooking and baking improve moods,creates bonds and brings people together. <br /> the feeling of satisfaction gained when seeing the  naturally enhances happiness.
                 </h6>
             </div>
 

@@ -5,11 +5,13 @@ import MenuCard from "../MenuCard/MenuCard";
 import OurProcess from "../OurProcess/OurProcess";
 import ShortIcon from "../ShortIcon/ShortIcon";
 import Footer from '../Footer/Footer';
+import BannerCategories from "../Banner/BannerCategories";
 
 const HomePage = () => {
     return (
         <div>
             <Banner />
+            <BannerCategories />
             <OurProcess />
             <MenuCard />
             <Cooks />

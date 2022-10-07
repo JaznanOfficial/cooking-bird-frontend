@@ -18,6 +18,7 @@ import CartPage from "./Pages/CartPage/CartPage";
 import UserInvoice from "./Pages/UserProfilePage/UserInvoice";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import BookTable from "./Pages/BookTable/BookTable";
+import Checkout from "./Pages/CartPage/Checkout";
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/menu" element={<MenuPage />}></Route>
                 <Route path="/cart" element={<CartPage />}></Route>
+                <Route path="/check-out" element={<Checkout />}></Route>
                 <Route path="/about-&-contact" element={<AboutPage />}></Route>
                 <Route path="/user-profile" element={<UserProfilePage />}>
                     <Route path="user-orders" element={<UserOrderPage />}>
