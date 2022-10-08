@@ -9,7 +9,7 @@ const VoucherPage = () => {
                     <div className="flex justify-start items-start px-6 py-6 mx-auto">
                         <div className="text-start">
                             <div className="flex items-center justify-between">
-                                <h2 className="text-lg font-semibold text-gray-900 -mt-1 text-red-600 uppercase bg-orange-100 p-3">
+                                <h2 className="text-lg font-semibold -mt-1 text-red-600 uppercase bg-orange-100 p-3">
                                     <i className="fa-solid fa-ticket"></i> eid2023
                                 </h2>
                             </div>
