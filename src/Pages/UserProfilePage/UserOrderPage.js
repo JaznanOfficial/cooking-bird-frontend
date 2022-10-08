@@ -9,6 +9,8 @@ const UserOrderPage = () => {
                 <div className="flex bg-white shadow-lg rounded-3xl mx-auto md:mx-auto my-0 max-w-md md:max-w-2xl border w-full">
                     <div className="flex flex-col lg:flex-row lg:justify-start justify-center  lg:items-start items-center px-4 py-6">
                         
+                            
+                        
                             <img
                                 className="lg:w-36 lg:h-32 w-36 h-36 rounded-full object-cover mr-4 mb-4 shadow"
                                 src="https://www.cookwithkushi.com/wp-content/uploads/2019/06/IMG_3859_.jpg"
@@ -16,8 +18,13 @@ const UserOrderPage = () => {
                             />
                         
                         <div className="text-start">
+                            <div className="flex items-end justify-end">
+                                <h2 className="text-sm font-bold -mt-1 py-2 rounded-lg text-red-600  bg-orange-100 p-3">
+                                <i class="fa-sharp fa-solid fa-spinner"></i> Pending  
+                                </h2>
+                            </div>
                             <div className="flex items-center justify-between">
-                                <h2 className="text-lg font-semibold text-gray-900 -mt-1 text-red-600">
+                                <h2 className="text-lg font-semibold -mt-1 text-red-600">
                                     Cold Faluda{" "}
                                 </h2>
                                 <small className="text-sm text-gray-700">22h ago</small>
@@ -43,6 +50,11 @@ const UserOrderPage = () => {
                                             ৳
                                         </span>{" "}
                                     </h6>
+                                </div>
+                                <div>
+                                    <Link to={'/user-invoices/1'} className="bg-red-600 px-2 py-1 rounded-3xl text-gray-100 tracking-wide hover:bg-red-500 ">
+                                        Cancel
+                                    </Link>
                                 </div>
                                 <div>
                                     <Link to={'/user-invoices/1'} className="bg-red-600 px-2 py-1 rounded-3xl text-gray-100 tracking-wide hover:bg-red-500 ">
