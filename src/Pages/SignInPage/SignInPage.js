@@ -1,8 +1,19 @@
 import { Avatar } from "flowbite-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import useFirebase from "../../Hooks/useFirebase";
 
 const SignInPage = () => {
+    const { signInWithGoogle } = useFirebase();
+    
+    const googleSignIn = () => {
+        signInWithGoogle()
+            
+    }
+
+
+
+
     const background =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
 
@@ -108,13 +119,13 @@ const SignInPage = () => {
                     <hr className="mt-2 border border-rose-500" />
 
                     <button
-                        type="submit"
+                        onClick={googleSignIn}
                         className="block w-full bg-gradient-to-tr from-red-700 to-red-500 mt-4 py-2 rounded-2xl text-white font-semibold mb-2 hover:bg-gradient-bl hover:from-red-500 hover:to-red-700"
                     >
                         <i className="fa-brands fa-google-plus"></i> Sign in with Google
                     </button>
                     <button
-                        type="submit"
+                        
                         className="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
                     >
                         <i className="fa-brands fa-github"></i> Sign in with Github
