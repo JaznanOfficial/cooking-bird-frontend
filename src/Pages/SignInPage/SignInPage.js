@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 
 const SignInPage = () => {
-    const { signInWithGoogle } = useFirebase();
+    const { signInWithGoogle,signInWithGithub } = useFirebase();
     
     const googleSignIn = () => {
-        signInWithGoogle()
-            
+        signInWithGoogle()        
+    }
+
+    const githubSignIn = () => {
+        signInWithGithub()
     }
 
 
@@ -125,7 +128,7 @@ const SignInPage = () => {
                         <i className="fa-brands fa-google-plus"></i> Sign in with Google
                     </button>
                     <button
-                        
+                        onClick={githubSignIn}
                         className="block w-full bg-gradient-to-tr from-slate-900 to-slate-600 hover:bg-gradient-tr hover:from-slate-600 hover:to-slate-900 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
                     >
                         <i className="fa-brands fa-github"></i> Sign in with Github
