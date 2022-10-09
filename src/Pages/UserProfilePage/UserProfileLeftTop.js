@@ -1,6 +1,17 @@
-import React from "react";
+import React ,{ useState } from "react";
 
 const UserProfileLeftTop = () => {
+
+    const [show, setShow] = useState(false);
+
+    const openModal = () => {
+      setShow(true);
+      };
+      
+      const closeModal = () => {
+          setShow(false);
+      };
+
     return (
         <div className="container mx-auto">
             <div className="flex items-center justify-center">
