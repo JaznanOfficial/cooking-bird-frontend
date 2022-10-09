@@ -1,11 +1,14 @@
 import { Avatar } from "flowbite-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 
 const SignInPage = () => {
-    const { signInWithGoogle, signInWithGithub } = useFirebase();
+    const navigate = useNavigate()
+    const location = useLocation()
+    const { signInWithGoogle, signInWithGithub } = useFirebase(location.state.from);
 
+    // console.log(location.state.from);
     const googleSignIn = () => {
         signInWithGoogle();
     };
