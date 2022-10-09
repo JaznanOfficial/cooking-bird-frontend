@@ -8,9 +8,11 @@ import {
     signOut,
 } from "firebase/auth";
 import InitializeConfig from "../Firebase/Firebase.init";
+import { useNavigate } from "react-router-dom";
 
 InitializeConfig();
-const useFirebase = () => {
+const useFirebase = (location) => {
+    const navigate = useNavigate();
     const [user, setUser] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState({});
@@ -19,12 +21,13 @@ const useFirebase = () => {
 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
-
-    const signInWithGoogle = () => {
+    console.log(location)
+    
+    const signInWithGoogle = (location) => {
         return signInWithPopup(auth, googleProvider)
             .then((result) => {
                 setUser(result.user);
-                setLoading(false);               
+                setLoading(false);
             })
             .catch((error) => {
                 console.log(error);
@@ -58,13 +61,14 @@ const useFirebase = () => {
                 console.log(user);
                 setUser(user);
                 setLoading(false);
+                navigate(location)
             } else {
                 setUser({});
                 setLoading(false);
             }
         });
         return () => unsubscribe;
-    }, [auth]);
+    }, [auth,location,navigate]);
 
     return {
         signInWithGoogle,
