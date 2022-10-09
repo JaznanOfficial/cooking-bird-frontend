@@ -7,10 +7,10 @@ const PrivatePage = ({ children, ...rest }) => {
     const location = useLocation();
     const { loading, user } = useFirebase();
     if (loading) {
-        <RingLoader color="#E32D36" />;
+        return <RingLoader color="#E32D36" />;
     }
-    // console.log(children);
-    return user ? children : <Navigate to={"/sign-in"} state={{ from: location }}></Navigate>;
+    console.log({ children });
+    return user.auth ? children  : <Navigate to={"/sign-in"} state={{ from: location }}></Navigate>;
 };
 
 export default PrivatePage;
