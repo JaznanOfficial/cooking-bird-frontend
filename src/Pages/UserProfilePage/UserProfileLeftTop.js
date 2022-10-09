@@ -1,4 +1,5 @@
-import React ,{ useState } from "react";
+import React, { useState } from "react";
+import EditModal from "./EditModal"
 
 const UserProfileLeftTop = () => {
 
@@ -6,11 +7,11 @@ const UserProfileLeftTop = () => {
 
     const openModal = () => {
       setShow(true);
-      };
+    };
       
-      const closeModal = () => {
+    const closeModal = () => {
           setShow(false);
-      };
+    };
 
     return (
         <div className="container mx-auto">
@@ -25,9 +26,12 @@ const UserProfileLeftTop = () => {
                     <h3 className="text-sm text-gray-400 "> Creative Director </h3>
                     <p className="text-xs text-gray-400 mt-4"> +880123456789</p>
                     <p className="text-xs text-gray-400 mt-4"> abc@gmail.com</p>
-                    <button className="bg-red-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
+                    <button
+                        onClick={openModal}
+                        className="bg-red-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
                         Edit Profile
                     </button>
+                    <EditModal show={ show} closeModal={closeModal} />
                 </div>
             </div>
         </div>

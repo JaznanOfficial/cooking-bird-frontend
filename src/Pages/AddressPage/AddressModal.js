@@ -80,7 +80,6 @@ const AddressModal = ({ show, closeModal }) => {
               <div className="flex justify-end items-center">
                 <button
                   type="submit"
-                  
                   className="bg-red-600 px-4 py-2 rounded-3xl text-gray-100 tracking-wide hover:bg-red-500 text-end"
                 >
                   Submit
