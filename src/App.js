@@ -19,6 +19,7 @@ import UserInvoice from "./Pages/UserProfilePage/UserInvoice";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import BookTable from "./Pages/BookTable/BookTable";
 import Checkout from "./Pages/CartPage/Checkout";
+import PrivatePage from "./Pages/PrivatePage/PrivatePage";
 
 function App() {
     return (
@@ -34,21 +35,70 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/menu" element={<MenuPage />}></Route>
-                <Route path="/cart" element={<CartPage />}></Route>
-                <Route path="/check-out" element={<Checkout />}></Route>
                 <Route path="/about-&-contact" element={<AboutPage />}></Route>
-                <Route path="/user-profile" element={<UserProfilePage />}>
-                    <Route path="user-orders" element={<UserOrderPage />}>
-                        
-                    </Route>
-                    <Route path="user-vouchers" element={<VoucherPage />}></Route>
-                    <Route path="user-addresses" element={<AddressPage />}></Route>
+                <Route
+                    path="/cart"
+                    element={
+                        <PrivatePage>
+                            <CartPage />
+                        </PrivatePage>
+                    }
+                ></Route>
+                <Route
+                    path="/check-out"
+                    element={
+                        <PrivatePage>
+                            <Checkout />
+                        </PrivatePage>
+                    }
+                ></Route>
+                
+                <Route
+                    path="/user-profile"
+                    element={
+                        <PrivatePage>
+                            <UserProfilePage />
+                        </PrivatePage>
+                    }
+                >
+                    <Route
+                        path="user-orders"
+                        element={
+                            <PrivatePage>
+                                <UserOrderPage />
+                            </PrivatePage>
+                        }
+                    ></Route>
+                    <Route
+                        path="user-vouchers"
+                        element={
+                            <PrivatePage>
+                                <VoucherPage />
+                            </PrivatePage>
+                        }
+                    ></Route>
+                    <Route
+                        path="user-addresses"
+                        element={
+                            <PrivatePage>
+                                <AddressPage />
+                            </PrivatePage>
+                        }
+                    ></Route>
+                    <Route
+                    path="/user-invoices/:id"
+                    element={
+                        <PrivatePage>
+                            <UserInvoice />
+                        </PrivatePage>
+                    }
+                ></Route>
                 </Route>
                 <Route path="/sign-in" element={<SignInPage />}></Route>
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
                 <Route path="/book-table" element={<BookTable />}></Route>
                 <Route path="/*" element={<NotFoundPage />}></Route>
-                <Route path="/user-invoices/:id" element={<UserInvoice />}></Route>
+                
             </Routes>
 
             <WhatsAppWidget
