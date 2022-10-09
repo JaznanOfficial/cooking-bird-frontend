@@ -52,40 +52,20 @@ function App() {
                         </PrivatePage>
                     }
                 ></Route>
-                
+
                 <Route
-                    path="/user-profile"
+                    path="/user-profile/*"
                     element={
                         <PrivatePage>
                             <UserProfilePage />
                         </PrivatePage>
                     }
                 >
-                    <Route
-                        path="user-orders"
-                        element={
-                            <PrivatePage>
-                                <UserOrderPage />
-                            </PrivatePage>
-                        }
-                    ></Route>
-                    <Route
-                        path="user-vouchers"
-                        element={
-                            <PrivatePage>
-                                <VoucherPage />
-                            </PrivatePage>
-                        }
-                    ></Route>
-                    <Route
-                        path="user-addresses"
-                        element={
-                            <PrivatePage>
-                                <AddressPage />
-                            </PrivatePage>
-                        }
-                    ></Route>
-                    <Route
+                    <Route path="user-orders" element={<UserOrderPage />}></Route>
+                    <Route path="user-vouchers" element={<VoucherPage />}></Route>
+                    <Route path="user-addresses" element={<AddressPage />}></Route>
+                </Route>
+                <Route
                     path="/user-invoices/:id"
                     element={
                         <PrivatePage>
@@ -93,12 +73,10 @@ function App() {
                         </PrivatePage>
                     }
                 ></Route>
-                </Route>
                 <Route path="/sign-in" element={<SignInPage />}></Route>
                 <Route path="/sign-up" element={<SignUpPage />}></Route>
                 <Route path="/book-table" element={<BookTable />}></Route>
                 <Route path="/*" element={<NotFoundPage />}></Route>
-                
             </Routes>
 
             <WhatsAppWidget
