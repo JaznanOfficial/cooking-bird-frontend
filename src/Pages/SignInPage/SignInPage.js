@@ -4,18 +4,15 @@ import { Link } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 
 const SignInPage = () => {
-    const { signInWithGoogle,signInWithGithub } = useFirebase();
-    
+    const { signInWithGoogle, signInWithGithub } = useFirebase();
+
     const googleSignIn = () => {
-        signInWithGoogle()        
-    }
+        signInWithGoogle();
+    };
 
     const githubSignIn = () => {
-        signInWithGithub()
-    }
-
-
-
+        signInWithGithub();
+    };
 
     const background =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
@@ -82,8 +79,6 @@ const SignInPage = () => {
                             <input
                                 className="pl-2 outline-none border-none"
                                 type="text"
-                                name=""
-                                id=""
                                 placeholder="Email Address"
                             />
                         </div>
@@ -103,8 +98,6 @@ const SignInPage = () => {
                             <input
                                 className="pl-2 outline-none border-none"
                                 type="password"
-                                name=""
-                                id=""
                                 placeholder="Password"
                             />
                         </div>

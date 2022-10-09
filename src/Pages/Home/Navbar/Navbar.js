@@ -1,8 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import useFirebase from "../../../Hooks/useFirebase";
+// import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
+    const { user, logOut } = useFirebase()
+    console.log(user);
     const menuItems = (
         <>
             <li>
@@ -173,19 +177,15 @@ const Navbar = () => {
                                     Profile
                                 </Link>
                             </li>
-
                             <li>
-                                <a
-                                    href="/"
-                                    className="font-medium hover:bg-red-50 text-navy-900 hover:text-red-600"
-                                >
-                                    Settings
-                                </a>
+                                {user?.email}
                             </li>
 
+                            
+
                             <li>
                                 <a
-                                    href="/"
+                                    onClick={()=>{logOut()}}
                                     className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                                 >
                                     Logout
