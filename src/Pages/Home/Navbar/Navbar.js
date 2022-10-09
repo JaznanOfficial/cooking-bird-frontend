@@ -6,7 +6,9 @@ import useFirebase from "../../../Hooks/useFirebase";
 
 const Navbar = () => {
     const { user, logOut } = useFirebase()
-    console.log(user);
+    const signOutHandler = () => {
+        logOut()
+    }
     const menuItems = (
         <>
             <li>
@@ -177,19 +179,17 @@ const Navbar = () => {
                                     Profile
                                 </Link>
                             </li>
-                            <li>
-                                {user?.email}
-                            </li>
+                            
 
                             
 
                             <li>
-                                <a
-                                    onClick={()=>{logOut()}}
+                                <button
+                                    onClick={signOutHandler}
                                     className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-500"
                                 >
                                     Logout
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
