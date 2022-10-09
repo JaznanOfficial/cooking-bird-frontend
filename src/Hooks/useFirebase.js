@@ -64,12 +64,13 @@ const useFirebase = () => {
             }
         });
         return () => unsubscribe;
-    }, [auth, user]);
+    }, [auth]);
 
     return {
         signInWithGoogle,
         signInWithGithub,
         user,
+        loading,
         setLoading,
         setError,
         logOut,
