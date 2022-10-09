@@ -1,25 +1,36 @@
 import React, { useRef } from "react";
 import { Avatar, FileInput, Label } from "flowbite-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const SignUpPage = () => {
-  const background =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
+    const background =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
+    
 
-  const avatar =
-    "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
+    const avatar =
+        "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
+    
+/*     const [imageUpload, setImageUpload] = useState(null);
 
+    const handleImage = (e) => {
+        const image = e.target.files[0]; 
+    }
+        */
+
+  const imagRef = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const image = imagRef.current.value;
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    console.log(name, email, password);
+    console.log(image, name, email, password);
   };
 
   return (
@@ -42,7 +53,8 @@ const SignUpPage = () => {
         <div className="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
         <div className="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
         <div className="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
-      </div>
+          </div>
+          
       <div className="flex md:w-1/2 justify-center py-10 items-center bg-white">
         <div className="shadow-2xl p-5">
           <div className="relative overflow-hidden md:flex w-full bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center lg:hidden p-5 mb-5">
@@ -70,12 +82,15 @@ const SignUpPage = () => {
                   <img
                     className="h-16 w-16 object-cover rounded-full"
                     src={avatar}
+                    // src={imageUpload}
                     alt="profile img"
                   />
                 </div>
                 <label className="block">
                   <input
                     type="file"
+                    // onChange={handleImage}
+                    ref={imagRef}
                     className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-600 hover:file:bg-red-100"
                   />
                 </label>
