@@ -18,14 +18,14 @@ const SignUpPage = () => {
     }
         */
 
-  const imagRef = useRef();
+  const imgRef = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const image = imagRef.current.value;
+    const image = imgRef.current.value;
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
@@ -90,7 +90,7 @@ const SignUpPage = () => {
                   <input
                     type="file"
                     // onChange={handleImage}
-                    ref={imagRef}
+                    ref={imgRef}
                     className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-600 hover:file:bg-red-100"
                   />
                 </label>

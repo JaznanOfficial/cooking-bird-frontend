@@ -68,7 +68,7 @@ const useFirebase = (location) => {
             }
         });
         return () => unsubscribe;
-    }, [auth,location,navigate]);
+    }, [auth,location]);
 
     return {
         signInWithGoogle,
