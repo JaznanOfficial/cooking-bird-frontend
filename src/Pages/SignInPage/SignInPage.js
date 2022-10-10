@@ -1,12 +1,13 @@
+import React, { useRef } from "react";
 import { Avatar } from "flowbite-react";
-import React from "react";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 
 const SignInPage = () => {
-    const navigate = useNavigate()
-    const location = useLocation()
-    const { signInWithGoogle, signInWithGithub } = useFirebase(location.state.from);
+    // const navigate = useNavigate()
+    const location = useLocation();
+    const { signInWithGoogle, signInWithGithub } = useFirebase(location?.state?.from);
 
     // console.log(location.state.from);
     const googleSignIn = () => {
@@ -22,6 +23,17 @@ const SignInPage = () => {
 
     const avatar =
         "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
+
+    const emailRef = useRef();
+    const passwordRef = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+
+        console.log(email, password);
+    };
 
     return (
         <div className="h-screen md:flex">
@@ -63,7 +75,7 @@ const SignInPage = () => {
                     <div className="flex justify-center flex-wrap gap-2 my-2">
                         <Avatar img={avatar} rounded={true} size="lg" />
                     </div>
-                    <form className="bg-white">
+                    <form className="bg-white" onSubmit={handleSubmit}>
                         <div className="flex items-center border border-rose-400 py-2 px-3 rounded-2xl mb-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -82,6 +94,7 @@ const SignInPage = () => {
                             <input
                                 className="pl-2 outline-none border-none"
                                 type="text"
+                                ref={emailRef}
                                 placeholder="Email Address"
                             />
                         </div>
@@ -101,6 +114,7 @@ const SignInPage = () => {
                             <input
                                 className="pl-2 outline-none border-none"
                                 type="password"
+                                ref={passwordRef}
                                 placeholder="Password"
                             />
                         </div>
