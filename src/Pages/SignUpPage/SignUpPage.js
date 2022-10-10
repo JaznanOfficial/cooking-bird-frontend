@@ -1,38 +1,39 @@
 import React, { useRef } from "react";
-import { Avatar, FileInput, Label } from "flowbite-react";
+import { Alert, Avatar, FileInput, Label } from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import useFirebase from "../../Hooks/useFirebase";
 import axios from "axios";
+import { RingLoader } from "react-spinners";
 
 const SignUpPage = () => {
     const location = useLocation();
-    const { signUpUser } = useFirebase(location?.state?.from);
+    const { signUpUser, user, loading } = useFirebase(location?.state?.from);
 
     const background =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
 
     const avatar =
-        "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
+        "https://i.ibb.co/fr6tR3s/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620-k-20-m-1300845620.jpg";
 
-        const [imageUpload, setImageUpload] = useState("");
+    const [imageUpload, setImageUpload] = useState("");
 
     const handleImage = (e) => {
         const image = e.target.files[0];
-        console.log(image)
+        console.log(image);
         const formData = new FormData();
-        formData.append('file', image);
+        formData.append("file", image);
         formData.append("upload_preset", "mdyhppy2");
-        axios.post("https://api.cloudinary.com/v1_1/jaznanofficial/image/upload", formData)
-            .then(res => {
+        axios
+            .post("https://api.cloudinary.com/v1_1/jaznanofficial/image/upload", formData)
+            .then((res) => {
                 console.log(res.data.secure_url);
-                setImageUpload(res.data.secure_url)
+                setImageUpload(res.data.secure_url);
             })
-            .catch(err => {
-                console.log(err)
-            })
-    }
-        
+            .catch((err) => {
+                console.log(err);
+            });
+    };
 
     // const imgRef = useRef();
     const nameRef = useRef();
@@ -47,9 +48,31 @@ const SignUpPage = () => {
         const password = passwordRef.current.value;
 
         // console.log(image, name, email, password);
-        signUpUser({name,email, password,photoUrl});
+        signUpUser({ name, email, password, photoUrl });
     };
 
+    if (loading) {
+        return (
+            <div className="h-full">
+                <RingLoader color="#E32D36" size={200} cssOverride={{ margin: "100px auto" }} />
+            </div>
+        );
+    } else if (user.auth) {
+        return (
+            <div className="h-full mx-10 flex justify-center items-center py-24 lg:py-12">
+                <div>
+                    <div>
+                        <Alert color="failure">
+                            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                            <span className="font-bold mx-2">Danger Zone!</span> Farther don't try
+                            this kind of action,when you're already signed in. you'll be blocked!
+                        </Alert>
+                    </div>
+                    <RingLoader color="#E32D36" size={300} cssOverride={{ margin: "50px auto" }} />
+                </div>
+            </div>
+        );
+    }
     return (
         <div className="h-screen md:flex">
             <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
@@ -94,7 +117,7 @@ const SignUpPage = () => {
                                 <div className="shrink-0 mr-3">
                                     <img
                                         className="h-16 w-16 object-cover rounded-full"
-                                        src={imageUpload?imageUpload:avatar}
+                                        src={imageUpload ? imageUpload : avatar}
                                         // src={imageUpload}
                                         alt="profile img"
                                     />

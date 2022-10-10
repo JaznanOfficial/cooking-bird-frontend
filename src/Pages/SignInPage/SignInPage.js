@@ -1,13 +1,14 @@
 import React, { useRef } from "react";
-import { Avatar } from "flowbite-react";
+import { Alert, Avatar } from "flowbite-react";
 
 import { Link, useLocation } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
+import { RingLoader } from "react-spinners";
 
 const SignInPage = () => {
 
     const location = useLocation();
-    const { signInUser,signInWithGoogle, signInWithGithub } = useFirebase(location?.state?.from);
+    const { signInUser,signInWithGoogle, signInWithGithub,user,loading } = useFirebase(location?.state?.from);
 
     const googleSignIn = () => {
         signInWithGoogle();
@@ -34,6 +35,29 @@ const SignInPage = () => {
       // console.log(email, password);
       signInUser(email,password)
     };
+
+    if (loading) {
+        return (
+            <div className="h-full">
+                <RingLoader color="#E32D36" size={200} cssOverride={{ margin: "100px auto" }} />
+            </div>
+        );
+    } else if (user.auth) {
+        return (
+            <div className="h-full mx-10 flex justify-center items-center py-24 lg:py-12">
+                <div>
+                    <div>
+                        <Alert color="failure">
+                            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                            <span className="font-bold mx-2">Danger Zone!</span> Farther don't try
+                            this kind of action,when you're already signed in. you'll be blocked!
+                        </Alert>
+                    </div>
+                    <RingLoader color="#E32D36" size={300} cssOverride={{ margin: "50px auto" }} />
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="h-screen md:flex">
