@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { Avatar, FileInput, Label } from "flowbite-react";
+// import { Avatar, FileInput, Label } from "flowbite-react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 const SignUpPage = () => {
     const background =
