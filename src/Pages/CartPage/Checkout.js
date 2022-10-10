@@ -15,20 +15,11 @@ const Checkout = () => {
               Checkout
             </p>
 
-            
             <Link to="/">
               <button className="bg-red-600 px-8 py-2 mt-6 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
                 <i class="fa-solid fa-tent-arrow-turn-left"></i> Back{" "}
               </button>{" "}
             </Link>
-          </div>
-
-          <div>
-            <img
-              className="w-60 h-60"
-              src="https://i.ibb.co/9Yg0Pvx/cooking-bird.png"
-              alt="..."
-            />
           </div>
         </div>
 
