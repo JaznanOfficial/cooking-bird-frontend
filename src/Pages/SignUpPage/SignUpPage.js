@@ -38,7 +38,6 @@ const SignUpPage = () => {
       });
   };
 
-  // const imgRef = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
