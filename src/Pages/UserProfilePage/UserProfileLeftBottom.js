@@ -13,7 +13,7 @@ const UserProfileLeftBottom = () => {
                     </div>
 
                     <Link
-                        to="/user-profile/user-orders"
+                        to="/user-profile"
                         className="p-2.5 mt-3 flex items-center rounded-3xl px-4 duration-300 cursor-pointer bg-rose-100 hover:bg-red-500 text-red-500 hover:text-white focus:bg-red-500 focus:text-white "
                     >
                         <i className="fa-solid fa-bag-shopping"></i>
