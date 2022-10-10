@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
     getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    updateProfile,
     GoogleAuthProvider,
     GithubAuthProvider,
     onAuthStateChanged,
@@ -21,8 +24,8 @@ const useFirebase = (location) => {
 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
-    console.log(location)
-    
+    console.log(location);
+
     const signInWithGoogle = (location) => {
         return signInWithPopup(auth, googleProvider)
             .then((result) => {
@@ -45,6 +48,39 @@ const useFirebase = (location) => {
             });
     };
 
+    const signUpUser = (data) => {
+        console.log(data);
+        const {name,email,password,photoUrl} = data
+        return createUserWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+                console.log(result);
+                
+                    updateProfile(auth.currentUser, {
+                        displayName: name,
+                        photoURL: photoUrl,
+                    });
+              
+                setUser(result.user);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+    const signInUser = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+                console.log(result);
+                setUser(result.user);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+
+    // update user
+
     const logOut = () => {
         return signOut(auth)
             .then((result) => {})
@@ -61,18 +97,20 @@ const useFirebase = (location) => {
                 console.log(user);
                 setUser(user);
                 setLoading(false);
-                navigate(location)
+                navigate(location);
             } else {
                 setUser({});
                 setLoading(false);
             }
         });
         return () => unsubscribe;
-    }, [auth,location]);
+    }, [auth, location, navigate]);
 
     return {
         signInWithGoogle,
         signInWithGithub,
+        signUpUser,
+        signInUser,
         user,
         loading,
         setLoading,

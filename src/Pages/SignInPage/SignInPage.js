@@ -5,11 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 
 const SignInPage = () => {
-    // const navigate = useNavigate()
-    const location = useLocation();
-    const { signInWithGoogle, signInWithGithub } = useFirebase(location?.state?.from);
 
-    // console.log(location.state.from);
+    const location = useLocation();
+    const { signInUser,signInWithGoogle, signInWithGithub } = useFirebase(location?.state?.from);
+
     const googleSignIn = () => {
         signInWithGoogle();
     };
@@ -32,7 +31,8 @@ const SignInPage = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
-        console.log(email, password);
+      // console.log(email, password);
+      signInUser(email,password)
     };
 
     return (
