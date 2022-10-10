@@ -3,6 +3,7 @@ import { Avatar, FileInput, Label } from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import useFirebase from "../../Hooks/useFirebase";
+import axios from "axios";
 
 const SignUpPage = () => {
     const location = useLocation();
@@ -14,21 +15,33 @@ const SignUpPage = () => {
     const avatar =
         "https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8=";
 
-    /*     const [imageUpload, setImageUpload] = useState(null);
+        const [imageUpload, setImageUpload] = useState("");
 
     const handleImage = (e) => {
-        const image = e.target.files[0]; 
+        const image = e.target.files[0];
+        console.log(image)
+        const formData = new FormData();
+        formData.append('file', image);
+        formData.append("upload_preset", "mdyhppy2");
+        axios.post("https://api.cloudinary.com/v1_1/jaznanofficial/image/upload", formData)
+            .then(res => {
+                console.log(res.data.secure_url);
+                setImageUpload(res.data.secure_url)
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
-        */
+        
 
-    const imgRef = useRef();
+    // const imgRef = useRef();
     const nameRef = useRef();
     const emailRef = useRef();
     const passwordRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const photoUrl = imgRef.current.value;
+        const photoUrl = imageUpload;
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
@@ -81,7 +94,7 @@ const SignUpPage = () => {
                                 <div className="shrink-0 mr-3">
                                     <img
                                         className="h-16 w-16 object-cover rounded-full"
-                                        src={avatar}
+                                        src={imageUpload?imageUpload:avatar}
                                         // src={imageUpload}
                                         alt="profile img"
                                     />
@@ -89,8 +102,8 @@ const SignUpPage = () => {
                                 <label className="block">
                                     <input
                                         type="file"
-                                        // onChange={handleImage}
-                                        ref={imgRef}
+                                        onChange={handleImage}
+                                        // ref={imgRef}
                                         className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-600 hover:file:bg-red-100"
                                     />
                                 </label>
