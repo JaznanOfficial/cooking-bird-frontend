@@ -168,7 +168,7 @@ const Navbar = () => {
                                 className="btn btn-ghost btn-circle hover:bg-red-300 avatar"
                             >
                                 <div className="w-10 rounded-full">
-                                    <img src="https://placeimg.com/80/80/people" alt="" />
+                                    <img src={user.photoURL} alt="user-img" />
                                 </div>
                             </label>
 
