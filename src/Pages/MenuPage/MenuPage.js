@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { RingLoader } from "react-spinners";
 import "simplebar/dist/simplebar.min.css";
 
 import useFetch from "../../Hooks/useFetch";
@@ -6,12 +7,24 @@ import MenuItems from "./MenuItems";
 import "./MenuPage.css";
 
 const MenuPage = () => {
-    const { getData, data } = useFetch();
+    const { getData, data, loading } = useFetch();
 
-    getData("./menuData.json");
+    useEffect(() => {
+        getData("https://cooking-bird-server.onrender.com/api/v1/foodItems");
+    }, [getData]);
 
-    const [quantity, setQuantity] = useState(0);
+    const allFoods = data.data;
+    console.log(allFoods);
 
+    if (loading) {
+        return (
+            <div className="h-full mx-10 flex justify-center items-center py-24 lg:py-12">
+                <div>
+                    <RingLoader color="#E32D36" size={300} cssOverride={{ margin: "50px auto" }} />
+                </div>
+            </div>
+        );
+    }
     return (
         <div className="h-full">
             <div className="py-10">
@@ -91,7 +104,8 @@ const MenuPage = () => {
                 </div>
 
                 <div className="container grid grid-rows-1 grid-flow-row lg:grid-cols-4 md:grid-cols-2 mx-auto my-5">
-                    {data.map((menuCard) => {
+                    {allFoods.map((menuCard) => {
+                        console.log(menuCard);
                         return <MenuItems key={menuCard.id} menuCard={menuCard} />;
                     })}
                 </div>

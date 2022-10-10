@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.2.1",
     "axios": "^0.27.2",
     "bootstrap-icons": "^1.9.1",
+    "cloudinary-react": "^1.8.1",
     "daisyui": "^2.25.0",
     "firebase": "^9.11.0",
     "flowbite": "^1.5.3",
