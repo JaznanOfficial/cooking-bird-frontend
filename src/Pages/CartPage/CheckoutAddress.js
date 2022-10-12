@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const CheckoutAddress = () => {
+
+    const nameRef = useRef();
+
   return (
     <div className="flex mt-5 bg-white shadow-lg rounded-3xl md:mx-auto my-0 max-w-md md:max-w-2xl border w-full mx-auto px-6 py-6">
       <div className="text-start">
         <div class="flex items-center justify-between">
           <label class="ml-2 text-sm font-medium text-navy-900 cursor-pointer">
-            <input type="radio" class="peer sr-only" name="pricing" />
+            <input ref={nameRef} type="radio" class="peer sr-only" name="pricing" />
 
             <div className="text-gray-600 ring-2 ring-transparent transition-all peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 peer-checked:rounded-lg p-5">
               <div>
