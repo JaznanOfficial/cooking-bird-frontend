@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CheckoutAddress from "./CheckoutAddress";
+import CheckoutPayment from "./CheckoutPayment";
 
 const Checkout = () => {
-  const background =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
 
   return (
     <div class="py-16 px-5 md:px-6 2xl:px-0 flex justify-center items-center 2xl:mx-auto 2xl:container">
@@ -34,33 +33,7 @@ const Checkout = () => {
           </div>
 
           <div class="xl:w-2/5 flex flex-col sm:flex-row xl:flex-col justify-center items-center bg-gray-100 dark:bg-gray-800 py-7 sm:py-0 xl:py-10 px-10">
-            <div>
-              <Link
-                to="/"
-                type="submit"
-                className="block w-full  mt-4 py-3 rounded-md text-white font-semibold mb-2 "
-                style={{ background: `url(${background})` }}
-              >
-                Continue to payment
-              </Link>
-
-              <Link
-                to=""
-                type="submit"
-                className="text-white px-10 block w-full mt-4 py-3 font-medium rounded-lg text-sm mr-2 mb-2 bg-red-600"
-              >
-                Cancel this transfer
-              </Link>
-
-              <Link
-                to="/"
-                type="submit"
-                className="block w-full  mt-4 py-3 rounded-md text-white font-semibold mb-2 "
-                style={{ background: `url(${background})` }}
-              >
-                Cancel this transfer
-              </Link>
-            </div>
+            <CheckoutPayment />
           </div>
         </div>
       </div>
