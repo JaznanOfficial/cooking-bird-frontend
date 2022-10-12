@@ -27,6 +27,7 @@ const Checkout = () => {
             <h1 className="text-navy-900 text-2xl text-start font-ubuntu pt-5">
               Billing details
             </h1>
+           
 
             <CheckoutAddress />
             <CheckoutAddress />
