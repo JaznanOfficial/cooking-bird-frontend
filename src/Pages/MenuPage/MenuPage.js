@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReactPaginate from "react-paginate";
 import { RingLoader } from "react-spinners";
 import "simplebar/dist/simplebar.min.css";
 
@@ -11,10 +12,15 @@ const MenuPage = () => {
 
     useEffect(() => {
         getData("https://cooking-bird-server.onrender.com/api/v1/foodItems");
-    }, [getData]);
+    }, []);
 
     const allFoods = data.data;
-    console.log(allFoods);
+
+    // pagination-------------------------->
+
+    const [pageNumber, setPageNumber] = useState(0);
+    const foodsPerPage = 9;
+    const skip = foodsPerPage * pageNumber;
 
     if (loading) {
         return (
@@ -25,6 +31,14 @@ const MenuPage = () => {
             </div>
         );
     }
+
+    const displayItems = allFoods.slice(skip, skip + foodsPerPage);
+    const totalPage = Math.ceil(allFoods.length / foodsPerPage);
+    console.log(totalPage);
+    const pageChange = ({ selected }) => {
+        setPageNumber(selected);
+    };
+
     return (
         <div className="h-full">
             <div className="py-10">
@@ -103,12 +117,34 @@ const MenuPage = () => {
                     </div>
                 </div>
 
-                <div className="container grid grid-rows-1 grid-flow-row lg:grid-cols-4 md:grid-cols-2 mx-auto my-5">
-                    {allFoods.map((menuCard) => {
+                <div className="container grid grid-rows-1 grid-flow-row lg:grid-cols-3 md:grid-cols-2 mx-auto my-5 gap-5">
+                    {displayItems.map((menuCard) => {
                         console.log(menuCard);
                         return <MenuItems key={menuCard.id} menuCard={menuCard} />;
                     })}
                 </div>
+            </div>
+            <div className="py-5">
+            <ReactPaginate
+                
+                previousLabel={"<< Prev"}
+                nextLabel={"Next >>"}
+                pageCount={totalPage}
+                onPageChange={pageChange}
+                breakLabel={"..."}
+                marginPagesDisplayed={2}
+                pageRangeDisplayed={3}
+                containerClassName={"pagination flex items-center justify-center"}
+                activeLinkClassName={"btn-active text-white bg-red-500 border-red-500"}
+                pageLinkClassName={"btn text-gray hover:text-white hover:bg-red-500 hover:border-red-500 mx-1"}
+                
+                previousLinkClassName={"btn text-red-500 hover:text-white hover:bg-red-500 hover:border-red-500"}
+                
+                nextLinkClassName={"btn text-red-500 hover:text-white hover:bg-red-500 hover:border-red-500"}
+                
+                breakLinkClassName={"btn text-red-500 hover:text-white hover:bg-red-500 hover:border-red-500"}
+                
+            />
             </div>
         </div>
     );
