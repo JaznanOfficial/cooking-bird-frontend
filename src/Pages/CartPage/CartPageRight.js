@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import CartItems from "./CartItems";
 
 const CartPageRight = () => {
+<<<<<<< HEAD
   return (
     <div className="w-full">
       <div className="bg-white p-5 rounded-3xl">
         <h1 className="text-navy-900 text-start text-3xl">Cart</h1>
+=======
+    
+    
+    return (
+        <div className="w-full">
+            <div className="bg-white p-5 rounded-3xl">
+                <h1 className="text-navy-900 text-start text-3xl">Cart</h1>
+>>>>>>> abdullah
 
         <div class="overflow-x-none lg:p-3">
           <table class="table-auto w-full">
@@ -25,6 +35,7 @@ const CartPageRight = () => {
               </tr>
             </thead>
 
+<<<<<<< HEAD
             <tbody class="text-sm divide-y divide-gray-100">
               <tr>
                 <td class="p-2">
@@ -114,6 +125,18 @@ const CartPageRight = () => {
               </tr>
             </tbody>
           </table>
+=======
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            {Array.from({ length: 4 }).map((_, idx) => {
+                                return (
+                                    <CartItems/>
+                                );
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+>>>>>>> abdullah
         </div>
       </div>
     </div>

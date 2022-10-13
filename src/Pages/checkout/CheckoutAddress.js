@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 
 const CheckoutAddress = () => {
-
     const nameRef = useRef();
 
   return (
@@ -40,8 +39,7 @@ const CheckoutAddress = () => {
           </label>
         </div>
       </div>
-    </div>
-  );
+    </div>)
 };
 
 export default CheckoutAddress;
