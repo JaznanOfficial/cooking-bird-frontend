@@ -20,7 +20,7 @@ import AboutPage from "./Pages/AboutPage/AboutPage";
 import BookTable from "./Pages/BookTable/BookTable";
 
 import PrivatePage from "./Pages/PrivatePage/PrivatePage";
-import Checkout from "./Pages/checkout/Checkout";
+import Checkout from "./Pages/CheckoutPage/Checkout";
 
 function App() {
     return (
