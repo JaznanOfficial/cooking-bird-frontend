@@ -94,10 +94,17 @@ const useFirebase = (location) => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setLoading(true);
             if (user) {
-                console.log(user);
+                console.log(location);
                 setUser(user);
                 setLoading(false);
-                navigate(location);
+                if (!location?.state?.from === '') {
+                    
+                    navigate(location?.state?.from);
+                }
+                else {
+                    navigate('/')
+                }
+                // 
             } else {
                 setUser({});
                 setLoading(false);
