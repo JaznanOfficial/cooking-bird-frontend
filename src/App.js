@@ -18,8 +18,9 @@ import CartPage from "./Pages/CartPage/CartPage";
 import UserInvoice from "./Pages/UserProfilePage/UserInvoice";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import BookTable from "./Pages/BookTable/BookTable";
-import Checkout from "./Pages/CartPage/Checkout";
+
 import PrivatePage from "./Pages/PrivatePage/PrivatePage";
+import Checkout from "./Pages/checkout/Checkout";
 
 function App() {
     return (
