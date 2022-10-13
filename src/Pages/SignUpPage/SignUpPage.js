@@ -7,8 +7,12 @@ import { RingLoader } from "react-spinners";
 import useFirebase from "../../Hooks/useFirebase";
 
 const SignUpPage = () => {
-  const location = useLocation();
-  const { signUpUser, user, loading } = useFirebase(location?.state?.from);
+
+    const location = useLocation();
+    const { signUpUser, user, loading } = useFirebase(location);
+
+
+
 
   const background =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
@@ -53,37 +57,16 @@ const SignUpPage = () => {
     signUpUser({ name, email, password, photoUrl });
   };
 
-  if (loading) {
-    return (
-      <div className="h-full">
-        <RingLoader
-          color="#E32D36"
-          size={200}
-          cssOverride={{ margin: "100px auto" }}
-        />
-      </div>
-    );
-  } else if (user.auth) {
-    return (
-      <div className="h-full mx-10 flex justify-center items-center py-24 lg:py-12">
-        <div>
-          <div>
-            <Alert color="failure">
-              <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
-              <span className="font-bold mx-2">Danger Zone!</span> Farther don't
-              try this kind of action,when you're already signed in. you'll be
-              blocked!
-            </Alert>
-          </div>
-          <RingLoader
-            color="#E32D36"
-            size={300}
-            cssOverride={{ margin: "50px auto" }}
-          />
-        </div>
-      </div>
-    );
-  }
+
+    if (loading) {
+        return (
+            <div className="h-full">
+                <RingLoader color="#E32D36" size={200} cssOverride={{ margin: "100px auto" }} />
+            </div>
+        );
+    } 
+
+  
   return (
     <div className="h-screen md:flex">
       <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-rose-500 to-red-600 i justify-around items-center hidden">
