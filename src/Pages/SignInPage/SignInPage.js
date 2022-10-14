@@ -1,21 +1,21 @@
 import React, { useRef } from "react";
 import { Alert, Avatar } from "flowbite-react";
 
-import { Link, useLocation } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 import { RingLoader } from "react-spinners";
 
 const SignInPage = () => {
 
     const location = useLocation();
-    const { signInUser,signInWithGoogle, signInWithGithub,user,loading } = useFirebase(location);
+    const { signInUser,signInWithGoogle, signInWithGithub,user,loading } = useFirebase();
 
     const googleSignIn = () => {
-        signInWithGoogle();
+        signInWithGoogle(location);
     };
 
     const githubSignIn = () => {
-        signInWithGithub();
+        signInWithGithub(location);
     };
 
     const background =
@@ -33,16 +33,22 @@ const SignInPage = () => {
         const password = passwordRef.current.value;
 
       // console.log(email, password);
-      signInUser(email,password)
+      signInUser(email,password,location)
     };
 
     if (loading) {
         return (
-            <div className="h-full">
-                <RingLoader color="#E32D36" size={200} cssOverride={{ margin: "100px auto" }} />
+            <div className="h-full mx-10 flex justify-center items-center py-24 lg:py-12">
+                <div>
+                    <RingLoader color="#E32D36" size={300} cssOverride={{ margin: "50px auto" }} />
+                </div>
             </div>
         );
     } 
+
+    if (user?.auth) {
+        return <Navigate to={'/'} />
+    }
 
     return (
         <div className="h-screen md:flex">
