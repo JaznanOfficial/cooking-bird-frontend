@@ -30,14 +30,9 @@ const useFirebase = (location) => {
         return signInWithPopup(auth, googleProvider)
             .then((result) => {
                 setUser(result.user);
-                setLoading(false)
-                if (!location?.state?.from === '') {
-                    
-                    navigate(location?.state?.from);
-                }
-                else {
-                    navigate('/')
-                }
+                setLoading(false);
+                console.log(location);
+                navigate(location?.state?.from || "/");
             })
             .catch((error) => {
                 console.log(error);
@@ -48,14 +43,8 @@ const useFirebase = (location) => {
         return signInWithPopup(auth, githubProvider)
             .then((result) => {
                 setUser(result.user);
-                setLoading(false)
-                if (!location?.state?.from === '') {
-                    
-                    navigate(location?.state?.from);
-                }
-                else {
-                    navigate('/')
-                }
+                setLoading(false);
+                navigate(location?.state?.from || "/");
             })
             .catch((error) => {
                 console.log(error);
@@ -64,25 +53,19 @@ const useFirebase = (location) => {
 
     const signUpUser = (data) => {
         console.log(data);
-        const {name,email,password,photoUrl} = data
+        const { name, email, password, photoUrl } = data;
         return createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 console.log(result);
-                
-                    updateProfile(auth.currentUser, {
-                        displayName: name,
-                        photoURL: photoUrl,
-                    });
-              
+
+                updateProfile(auth.currentUser, {
+                    displayName: name,
+                    photoURL: photoUrl,
+                });
+
                 setUser(result.user);
-                setLoading(false)
-                if (!location?.state?.from === '') {
-                    
-                    navigate(location?.state?.from);
-                }
-                else {
-                    navigate('/')
-                }
+                setLoading(false);
+                navigate(location?.state?.from || "/");
             })
             .catch((error) => {
                 console.log(error);
@@ -93,14 +76,8 @@ const useFirebase = (location) => {
             .then((result) => {
                 console.log(result);
                 setUser(result.user);
-                setLoading(false)
-                if (!location?.state?.from === '') {
-                    
-                    navigate(location?.state?.from);
-                }
-                else {
-                    navigate('/')
-                }
+                setLoading(false);
+                navigate(location?.state?.from || "/");
             })
             .catch((error) => {
                 console.log(error);
@@ -122,11 +99,10 @@ const useFirebase = (location) => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setLoading(true);
             if (user) {
-                console.log(location);
-                setUser(user);
                 setLoading(false);
-                
-                // 
+                setUser(user);
+
+                //
             } else {
                 setUser({});
                 setLoading(false);
