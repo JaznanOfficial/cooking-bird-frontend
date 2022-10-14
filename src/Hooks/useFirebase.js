@@ -39,7 +39,7 @@ const useFirebase = (location) => {
             });
     };
 
-    const signInWithGithub = () => {
+    const signInWithGithub = (location) => {
         return signInWithPopup(auth, githubProvider)
             .then((result) => {
                 setUser(result.user);
@@ -51,7 +51,7 @@ const useFirebase = (location) => {
             });
     };
 
-    const signUpUser = (data) => {
+    const signUpUser = (data,location) => {
         console.log(data);
         const { name, email, password, photoUrl } = data;
         return createUserWithEmailAndPassword(auth, email, password)
@@ -71,7 +71,7 @@ const useFirebase = (location) => {
                 console.log(error);
             });
     };
-    const signInUser = (email, password) => {
+    const signInUser = (email, password,location) => {
         return signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 console.log(result);
@@ -101,8 +101,6 @@ const useFirebase = (location) => {
             if (user) {
                 setLoading(false);
                 setUser(user);
-
-                //
             } else {
                 setUser({});
                 setLoading(false);
