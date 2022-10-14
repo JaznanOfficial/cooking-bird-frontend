@@ -30,7 +30,14 @@ const useFirebase = (location) => {
         return signInWithPopup(auth, googleProvider)
             .then((result) => {
                 setUser(result.user);
-                setLoading(false);
+                setLoading(false)
+                if (!location?.state?.from === '') {
+                    
+                    navigate(location?.state?.from);
+                }
+                else {
+                    navigate('/')
+                }
             })
             .catch((error) => {
                 console.log(error);
@@ -41,7 +48,14 @@ const useFirebase = (location) => {
         return signInWithPopup(auth, githubProvider)
             .then((result) => {
                 setUser(result.user);
-                setLoading(false);
+                setLoading(false)
+                if (!location?.state?.from === '') {
+                    
+                    navigate(location?.state?.from);
+                }
+                else {
+                    navigate('/')
+                }
             })
             .catch((error) => {
                 console.log(error);
@@ -61,7 +75,14 @@ const useFirebase = (location) => {
                     });
               
                 setUser(result.user);
-                setLoading(false);
+                setLoading(false)
+                if (!location?.state?.from === '') {
+                    
+                    navigate(location?.state?.from);
+                }
+                else {
+                    navigate('/')
+                }
             })
             .catch((error) => {
                 console.log(error);
@@ -72,7 +93,14 @@ const useFirebase = (location) => {
             .then((result) => {
                 console.log(result);
                 setUser(result.user);
-                setLoading(false);
+                setLoading(false)
+                if (!location?.state?.from === '') {
+                    
+                    navigate(location?.state?.from);
+                }
+                else {
+                    navigate('/')
+                }
             })
             .catch((error) => {
                 console.log(error);
@@ -97,13 +125,7 @@ const useFirebase = (location) => {
                 console.log(location);
                 setUser(user);
                 setLoading(false);
-                if (!location?.state?.from === '') {
-                    
-                    navigate(location?.state?.from);
-                }
-                else {
-                    navigate('/')
-                }
+                
                 // 
             } else {
                 setUser({});
