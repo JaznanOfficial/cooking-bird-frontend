@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Alert, Avatar, FileInput, Label } from "flowbite-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { RingLoader } from "react-spinners";
@@ -53,19 +53,23 @@ const SignUpPage = () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    // console.log(image, name, email, password);
-    signUpUser({ name, email, password, photoUrl });
+    const userData = { name, email, password, photoUrl }
+    signUpUser(userData,location);
   };
 
 
     if (loading) {
         return (
-            <div className="h-full">
-                <RingLoader color="#E32D36" size={200} cssOverride={{ margin: "100px auto" }} />
-            </div>
+          <div className="h-full mx-10 flex justify-center items-center py-24 lg:py-12">
+          <div>
+              <RingLoader color="#E32D36" size={300} cssOverride={{ margin: "50px auto" }} />
+          </div>
+      </div>
         );
     } 
-
+  if (user?.auth) {
+     return <Navigate to='/'/>
+    }
   
   return (
     <div className="h-screen md:flex">
