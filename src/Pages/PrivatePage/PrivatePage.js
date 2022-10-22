@@ -9,7 +9,7 @@ const PrivatePage = ({ children, ...rest }) => {
     if (loading) {
         return <RingLoader color="#E32D36" />;
     }
-    console.log({ children });
+    // console.log({ children });
     return user.auth ? children  : <Navigate to={"/sign-in"} state={{from:location}}></Navigate>;
 };
 
