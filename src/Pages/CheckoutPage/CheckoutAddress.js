@@ -24,7 +24,7 @@ const CheckoutAddress = ({setShowAddress}) => {
           className="text-gray-600 ring-2 ring-transparent transition-all peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 peer-checked:rounded-lg p-5"
         >
           <div class="flex items-center justify-between">
-            <h2 className="inline text-lg font-semibold p-2 rounded-lg text-red-600 uppercase bg-orange-100" onClick={()=>addressHandler("Office")}  >
+            <h2 className="inline text-lg font-semibold p-2 rounded-lg text-red-600 uppercase bg-orange-100">
               <i className="fa-solid fa-location-dot"></i> Office
             </h2>
 
