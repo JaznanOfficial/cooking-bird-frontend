@@ -8,7 +8,7 @@ const CheckoutPayment = () => {
     return (
         <div>
         <Link
-          to="/"
+          to=""
           type="submit"
           className="block w-full  mt-4 py-3 rounded-md text-white font-semibold mb-2 "
           style={{ background: `url(${background})` }}
@@ -25,7 +25,7 @@ const CheckoutPayment = () => {
         </Link>
 
         <Link
-          to="/"
+          to=""
           type="submit"
           className="block w-full  mt-4 py-3 rounded-md text-white font-semibold mb-2 "
           style={{ background: `url(${background})` }}
