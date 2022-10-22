@@ -1,9 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import CheckoutAddress from "./CheckoutAddress";
 import CheckoutPayment from "./CheckoutPayment";
 
 const Checkout = () => {
+  const [showAddress, setShowAddress] = useState({});
+
+
+  const handlePayment = () => {
+    console.log(showAddress);
+  }
+
+
 
   return (
     <div class="py-16 px-5 md:px-6 2xl:px-0 flex justify-center items-center 2xl:mx-auto 2xl:container">
@@ -14,10 +23,8 @@ const Checkout = () => {
               Checkout
             </p>
 
-            <Link to="/">
-              <button className="bg-red-600 px-8 py-2 mt-6 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
-                <i class="fa-solid fa-tent-arrow-turn-left"></i> Back{" "}
-              </button>{" "}
+            <Link to="/" className="bg-red-600 px-8 py-2 mt-6 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide hover:bg-red-500 ">
+                <i class="fa-solid fa-tent-arrow-turn-left"></i> Back
             </Link>
           </div>
         </div>
@@ -29,12 +36,12 @@ const Checkout = () => {
             </h1>
            
 
-            <CheckoutAddress />
-            <CheckoutAddress />
+            <CheckoutAddress setShowAddress={setShowAddress} />
+            <CheckoutAddress setShowAddress={setShowAddress} />
           </div>
 
           <div class="xl:w-2/5 flex flex-col sm:flex-row xl:flex-col justify-center items-center bg-gray-100 dark:bg-gray-800 py-7 sm:py-0 xl:py-10 px-10">
-            <CheckoutPayment />
+            <CheckoutPayment handlePayment={handlePayment} />
           </div>
         </div>
       </div>
