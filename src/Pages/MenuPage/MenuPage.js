@@ -11,7 +11,7 @@ const MenuPage = () => {
     const { getData, data, loading } = useFetch();
 
     useEffect(() => {
-        getData("https://cooking-bird-server.onrender.com/api/v1/foodItems");
+        getData("https://cooking-bird-server-production.up.railway.app/api/v1/foodItems");
     }, []);
 
     const allFoods = data.data;
