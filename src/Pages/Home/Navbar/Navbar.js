@@ -43,6 +43,14 @@ const Navbar = () => {
                     Book a Table
                 </Link>
             </li>
+            <li>
+                <Link
+                    to="/admin"
+                    className="text-base font-medium hover:bg-red-50 text-navy-900 hover:text-red-600 focus:bg-red-50 focus:text-red-600"
+                >
+                    Admin
+                </Link>
+            </li>
         </>
     );
     return (

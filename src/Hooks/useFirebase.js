@@ -12,6 +12,7 @@ import {
 } from "firebase/auth";
 import InitializeConfig from "../Firebase/Firebase.init";
 import { useNavigate } from "react-router-dom";
+import useFetch from "./useFetch";
 
 InitializeConfig();
 const useFirebase = (location) => {
@@ -19,12 +20,13 @@ const useFirebase = (location) => {
     const [user, setUser] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState({});
+    const {postData} = useFetch()
 
     const auth = getAuth();
 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
-    console.log(location);
+    // console.log(location);
 
     const signInWithGoogle = (location) => {
         return signInWithPopup(auth, googleProvider)
@@ -51,7 +53,7 @@ const useFirebase = (location) => {
             });
     };
 
-    const signUpUser = (data,location) => {
+    const signUpUser = (data, location) => {
         console.log(data);
         const { name, email, password, photoUrl } = data;
         return createUserWithEmailAndPassword(auth, email, password)
@@ -71,7 +73,7 @@ const useFirebase = (location) => {
                 console.log(error);
             });
     };
-    const signInUser = (email, password,location) => {
+    const signInUser = (email, password, location) => {
         return signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 console.log(result);
@@ -101,6 +103,16 @@ const useFirebase = (location) => {
             if (user) {
                 setLoading(false);
                 setUser(user);
+                // console.log(user);
+                // user data fetch--------->
+                // const name = user.displayName;
+                // const email = user.email;
+                // const img = user.photoURL;
+                // const role = 'user';
+                // const status = 'active';
+                // const data = { name, email, img, role, status }
+                // postData("https://cooking-bird-server-production.up.railway.app/api/v1/users", data)
+                
             } else {
                 setUser({});
                 setLoading(false);
