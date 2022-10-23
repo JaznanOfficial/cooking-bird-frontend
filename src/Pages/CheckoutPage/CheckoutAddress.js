@@ -3,9 +3,7 @@ import React from "react";
 const CheckoutAddress = ({setShowAddress}) => {
 
   const addressHandler = (event) => {
-    // console.log(data.currentTarget, "div clicked");
     const data = event.target.innerText;
-    // console.log(data, "div clicked");
     setShowAddress(data)
 
   }
@@ -19,7 +17,7 @@ const CheckoutAddress = ({setShowAddress}) => {
           class="peer sr-only"
           name="pricing" />
 
-        <div
+        <button
           onClick={addressHandler}
           className="text-gray-600 ring-2 ring-transparent transition-all peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 peer-checked:rounded-lg p-5"
         >
@@ -47,7 +45,7 @@ const CheckoutAddress = ({setShowAddress}) => {
             </div>
             <hr />
           </div>
-        </div>
+        </button>
       </div>
     </label>
   );
