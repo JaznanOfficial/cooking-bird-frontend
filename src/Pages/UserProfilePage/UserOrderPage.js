@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useFirebase from '../../Hooks/useFirebase';
 
 const UserOrderPage = () => {
+    const { user } = useFirebase()
+    console.log(user.email);
     return (
         <div className="bg-white p-5 min-h-screen rounded-3xl">
             <h1 className="text-navy-900 text-start text-5xl">Past Orders</h1>
