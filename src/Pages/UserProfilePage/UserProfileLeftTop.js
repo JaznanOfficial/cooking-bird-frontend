@@ -19,7 +19,7 @@ const UserProfileLeftTop = () => {
         }
     }, [user?.email,]);
     
-    console.log(data[0]);
+    // console.log(data[0]);
     const userData = data[0]
     const {name,email,profession,img,phone} = userData || {}
 
@@ -59,7 +59,7 @@ const UserProfileLeftTop = () => {
                         >
                             Edit Profile
                         </button>
-                        <EditModal show={show} closeModal={closeModal} />
+                        <EditModal show={show} closeModal={closeModal} userData={userData} />
                     </div>
                 </div>
             </div>
