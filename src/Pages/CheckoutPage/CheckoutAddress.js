@@ -1,20 +1,28 @@
-import React, { useRef } from "react";
+import React from "react";
 
-const CheckoutAddress = () => {
-  const nameRef = useRef();
+const CheckoutAddress = ({setShowAddress}) => {
+
+  const addressHandler = (event) => {
+    const data = event.target.innerText;
+    setShowAddress(data)
+
+  }
+
 
   return (
     <label class="ml-2 text-sm font-medium text-navy-900 cursor-pointer">
       <div className="flex mt-5 bg-white shadow-lg rounded-lg max-w-max">
         <input
-          ref={nameRef}
           type="radio"
           class="peer sr-only"
           name="pricing" />
 
-        <div className="text-gray-600 ring-2 ring-transparent transition-all peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 peer-checked:rounded-lg p-5">
+        <button
+          onClick={addressHandler}
+          className="text-gray-600 ring-2 ring-transparent transition-all peer-checked:text-red-600 peer-checked:ring-red-400 peer-checked:ring-offset-2 peer-checked:rounded-lg p-5"
+        >
           <div class="flex items-center justify-between">
-            <h2 className="inline text-lg font-semibold p-2 rounded-lg text-red-600 uppercase bg-orange-100 ">
+            <h2 className="inline text-lg font-semibold p-2 rounded-lg text-red-600 uppercase bg-orange-100">
               <i className="fa-solid fa-location-dot"></i> Office
             </h2>
 
@@ -37,7 +45,7 @@ const CheckoutAddress = () => {
             </div>
             <hr />
           </div>
-        </div>
+        </button>
       </div>
     </label>
   );
