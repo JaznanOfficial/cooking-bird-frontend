@@ -7,7 +7,7 @@ import EditModal from "./EditModal";
 const UserProfileLeftTop = () => {
     const { getData, data, dataLoading } = useFetch();
     const { user,loading } = useFirebase();
-    const [currentUser,setCurrentUser] = useState()
+
 
     // console.log(user.email);
 

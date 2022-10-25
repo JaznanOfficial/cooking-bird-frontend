@@ -7,11 +7,11 @@ const useFetch = () => {
     const [dataLoading, setDataLoading] = useState(true);
 
     const getData = async (url) => {
-        console.log(url);
+        // console.log(url);
         axios
             .get(url)
             .then((res) => {
-                console.log(res);
+                // console.log(res);
                 setDataLoading(false);
                 return setData(res.data);
             })
@@ -23,6 +23,7 @@ const useFetch = () => {
         axios
             .post(url, data, { headers: { "Content-Type": "application/json" } })
             .then((res) => {
+                setDataLoading(false);
                 console.log(res);
             })
             .catch((err) => {
@@ -31,8 +32,9 @@ const useFetch = () => {
     };
     const patchData = async (url, data) => {
         axios
-            .patch(url, data, { headers: { "Content-Type": "application/json" } })
+            .patch(url, data,{ headers: { "Content-Type": "application/json" } })
             .then((res) => {
+                setDataLoading(false);
                 console.log(res);
             })
             .catch((err) => {

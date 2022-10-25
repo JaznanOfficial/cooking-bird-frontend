@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { RingLoader } from "react-spinners";
+import useFetch from "../../Hooks/useFetch";
+import useFirebase from "../../Hooks/useFirebase";
 import CartItems from "./CartItems";
 
-const CartPageRight = () => {
+const CartPageRight = ({data,dataLoading,loading}) => {
+
+    console.log(data);
+    // const {dataLoading} = useFetch()
+
+
     
     
+
     return (
         <div className="w-full">
             <div className="bg-white p-5 rounded-3xl">
@@ -20,7 +29,7 @@ const CartPageRight = () => {
                                     <div class="font-semibold text-left">Quantity</div>
                                 </th>
                                 <th class="p-2">
-                                    <div class="font-semibold text-left">Total</div>
+                                    <div class="font-semibold text-right">Total</div>
                                 </th>
                                 <th class="p-2">
                                     <div class="font-semibold text-center">Action</div>
@@ -29,9 +38,13 @@ const CartPageRight = () => {
                         </thead>
 
                         <tbody class="text-sm divide-y divide-gray-100">
-                            {Array.from({ length: 4 }).map((_, idx) => {
+                            
+                            
+                            {
+                                data?.message?<h1 className="text-center my-10 text-red-600">{data.message}</h1> :
+                                data?.map((cartItem) => {
                                 return (
-                                    <CartItems/>
+                                    <CartItems cartItem={cartItem} />
                                 );
                             })}
                         </tbody>

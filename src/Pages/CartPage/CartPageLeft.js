@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import useFetch from "../../Hooks/useFetch";
+import useFirebase from "../../Hooks/useFirebase";
 
 const CartPageLeft = () => {
+
+    const { user } = useFirebase()
+    const {getData,data} = useFetch()
+    
+    useEffect(() => {
+        if (user?.email) {
+            getData(
+                `https://cooking-bird-server-production.up.railway.app/api/v1/users?email=${user.email}`
+            );
+        }
+    }, [user?.email]);
+    
+    
+
+
+    // console.log(data);
+
+
+    const userData = data[0]
+    const {name,email,img} = userData || {}
+
     const background =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GUpqeY8UWzbMerPMh7wbljDWFZ-zmIlAA&usqp=CAU";
 
@@ -12,10 +35,10 @@ const CartPageLeft = () => {
                     <div className="hidden lg:block">
                         <img
                             className="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"
-                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                            alt="product designer"
+                            src={img}
+                            alt='user'
                         />
-                        <h1 className="text-lg text-red-700"> John Doe </h1>
+                        <h1 className="text-lg text-red-700"> {name} </h1>
                     </div>
 
                     <div className="p-5 pb-0">

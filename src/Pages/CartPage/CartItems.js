@@ -1,21 +1,29 @@
 import React, { useState } from "react";
+import useFetch from "../../Hooks/useFetch";
 
 
-const CartItems = () => {
-    const [quantity, setQuantity] = useState(0)
+const CartItems = ({ cartItem }) => {
 
+    const {patchData,dataLoading}= useFetch()
+
+    console.log(cartItem)
+    const { _id,name, quantity,price } = cartItem;
+    const [updateQuantity, setUpdateQuantity] = useState(quantity)
+
+    console.log(updateQuantity)
 
     const increment = () => {
-        setQuantity((quantity) => quantity+1)
+        setUpdateQuantity((quantity) => quantity+1)
+        patchData(`https://cooking-bird-server-production.up.railway.app/api/v1/carts?_id=${_id}`,updateQuantity)
     }
 
     const decrement = () => {
         if (quantity===0) {
             
-            setQuantity(0)
+            // setQuantity(1)
         }
         else {
-            setQuantity(quantity=>quantity-1)
+            // setQuantity(quantity=>quantity-1)
         }
     }
 
@@ -25,7 +33,7 @@ const CartItems = () => {
         <tr>
             <td class="p-2">
                 <div class="font-medium text-gray-800 text-start lg:text-xl">
-                    Samsung Galaxy Note 4
+                    {name}
                 </div>
             </td>
             <td class="p-2">
@@ -36,14 +44,14 @@ const CartItems = () => {
                     >
                         <i className="fa-solid fa-minus"></i>
                     </button>
-                    <h1 className="lg:text-xl mx-3">{quantity}</h1>
+                    <h1 className="lg:text-xl mx-3">{updateQuantity}</h1>
                     <button className=" px-2 py-1 bg-white dark:bg-gray-900 hover:bg-red-500 hover:text-white hover:cursor-pointer border border-gray-300 hover:border-white rounded-full"  onClick={increment}>
                         <i className="fa-solid fa-plus"></i>
                     </button>
                 </div>
             </td>
             <td class="p-2">
-                <div class="text-left font-medium text-green-500 lg:text-xl">BDT 2,890.66</div>
+                <div class="text-right font-medium text-green-500 lg:text-xl">BDT {quantity*price}</div>
             </td>
             <td class="p-2">
                 <div class="flex justify-center">
